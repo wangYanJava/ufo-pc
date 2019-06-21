@@ -1,5 +1,5 @@
 <template>
-    <div :style="height" class="case">
+    <div ref="box" class="case">
         <!-- 左边菜单项 -->
         <div class="leftBox">
             <div class="contBox">
@@ -83,6 +83,10 @@ export default {
         this.otherList = resp.data.case[4]
         this.currentList = this.officeList
     })
+  },
+  mounted(){
+    //   console.log(this.$refs)
+      this.$refs.box.style.height = this.height;
   },
   methods: {
     getHeight() {
@@ -334,7 +338,7 @@ export default {
                             width: 100%;
                             // height: 3.07rem;
                             // width: 2.04rem;
-                            height: 2.04rem;
+                            height: 1.8rem;
                             margin-top: 40px;
                             overflow: hidden;
                             position: relative;

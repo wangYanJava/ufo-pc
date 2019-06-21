@@ -1,5 +1,5 @@
 <template>
-  <div :style="height" class="customer">
+  <div ref="box" class="customer">
     <div class="contentWrap">
       <div class="middlebox">
         <div class="tit_1">客户<span>/customer</span>
@@ -157,6 +157,9 @@ export default {
   },
   created() {
     this.getHeight()
+  },
+  mounted() {
+    this.$refs.box.style.height = this.height;
   },
   methods: {
     getHeight() {
@@ -468,7 +471,7 @@ export default {
 .customer .contentWrap .middlebox .dl .dd.d1 .number .number_b .l2 h3 b{
     display: inline-block;
     vertical-align: middle;
-    font-size: 0.55rem !important;
+    font-size: 0.45rem !important;
     font-family: Arial;
     font-weight: bold;
     margin-right: 0.05rem;

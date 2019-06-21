@@ -1,5 +1,5 @@
 <template>
-  <div :style="height" class="service">
+  <div ref="box" class="service">
     <div class="contentBox">
       <div class="left">
         <div class="tablebox">
@@ -69,6 +69,9 @@ export default {
       this.serviceList = resp.data.service
       this.currServiceDetail = this.serviceList[0]
     })
+  },
+  mounted() {
+    this.$refs.box.style.height = this.height;
   },
   methods:{
     getHeight() {

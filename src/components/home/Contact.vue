@@ -1,5 +1,5 @@
 <template>
-  <div :style="height" class="contact">
+  <div ref="box" class="contact">
     <div class="contBox">
       <div class="middlebox">
         <div class="c_1570">
@@ -176,6 +176,9 @@ export default {
     this.getHeight()
     console.log(this.$refs)
       // this.$refs.regionItem.setActiveItem(0)
+  },
+  mounted() {
+    this.$refs.box.style.height = this.height;
   },
   methods: {
     getHeight() {
