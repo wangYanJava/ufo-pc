@@ -1,5 +1,5 @@
 <template>
-  <div class="customer">
+  <div :style="height" class="customer">
     <div class="contentWrap">
       <div class="middlebox">
         <div class="tit_1">客户<span>/customer</span>
@@ -51,13 +51,13 @@
                     <div class="number_t">
 
                         <li class="l2">
-                            <h3><b data-start="500" class="count1">500</b>+</h3>
-                            <h5>国内外客户服务经验</h5>
+                            <h3><b data-start="500" class="count1">50</b>+</h3>
+                            <h5>专业设计师</h5>
                         </li>
 
                         <li class="l2">
-                            <h3><b data-start="1000" class="count2">1000</b>+</h3>
-                            <h5>成功工业设计案例</h5>
+                            <h3><b data-start="1000" class="count2">200</b>+</h3>
+                            <h5>施工团队</h5>
                         </li>
 
                     </div>
@@ -65,17 +65,17 @@
 
                         <li class="l2 first">
                             <h3><b data-start="1" class="count">1</b>站式</h3>
-                            <h5>全设计托管服务</h5>
+                            <h5>全链条服务</h5>
                         </li>
 
                         <li class="l2">
                             <h3><b data-start="20" class="count">20</b>天</h3>
-                            <h5>提供完善的设计解决方案</h5>
+                            <h5>提供完善的设计方案</h5>
                         </li>
 
                         <li class="l2">
-                            <h3><b data-start="30" class="count">30</b>+</h3>
-                            <h5>设计精英大咖支持</h5>
+                            <h3><b data-start="30" class="count">730</b>天</h3>
+                            <h5>售后品质保证</h5>
                         </li>
 
                     </div>
@@ -148,7 +148,20 @@
 <script>
 export default {
   name: 'Custormer',
+  data() {
+    return {
+      height: {
+        height: ''
+      },
+    }
+  },
+  created() {
+    this.getHeight()
+  },
   methods: {
+    getHeight() {
+        this.height=window.innerHeight+'px';
+    },
     toMore() {
       this.$router.push({
         path: '/curpartner'
@@ -158,7 +171,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .customer{
   width: 100%;
   height: 8.98rem;

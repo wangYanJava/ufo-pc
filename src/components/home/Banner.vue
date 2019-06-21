@@ -47,7 +47,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .banner{
   width: 100%;
   height: 100%;
@@ -81,7 +81,7 @@ export default {
   }
   .banner .el-carousel__indicators{
     position: absolute;
-    bottom: 9%;
+    bottom: 1%;
     z-index: 20;
   }
 </style>

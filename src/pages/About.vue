@@ -14,7 +14,7 @@
     </div>
     <div class="btnBox">
       <!-- 导航切换按钮 -->
-      <div class="navBtn" @mouseover="showNav">
+      <div class="navBtn" @click="showNav">
         <img src="../assets/navBtn.png" alt="">
       </div>
     </div>
@@ -29,11 +29,10 @@
         公司介绍
       </div>
       <div class="smallTitle">
-        JWD&nbsp;DESIGN&nbsp;CO.LTD
+        Company &nbsp; Introduction
       </div>
       <div class="aboutText text1">
-        北京同创新业科技有限公司成立于2017年12月25日，2018年4月创立了包工侠平台，“包工侠”作为国内首<br />
-        家施工业“征信应用+垂直运营”平台，旨在解决包工头与劳务、发包方的征信不对称现象。旨在解决包工头与劳务、发包方的征信不对称现象。
+        蔚蓝公装是北京同创新业科技有限公司包工侠旗下孵化品牌，成立于2015年12月，致力于为各类发包方提供更优质的施工团队，<br />同时也为包工头积累相应的江湖信用，提供福利支持。未来公装目前拥有50名专业设计师，120多个施工团队，<br />国家一级装修资质，为广大客户提供空间设计，施工建造，智能AI监理，材料供应等一站式服务。
       </div>
     </div>
     <!-- 服务优势 -->
@@ -42,15 +41,17 @@
         服务优势
       </div>
       <div class="smallTitle">
-        OUR&nbsp;ADVANTAGE
+        Service&nbsp;Advantage
       </div>
       <div class="aboutText text2">
         室内与软装全方位设计及顾问<br />
-        实现高品质室内空间<br />
-        整合国际及高档品牌等资源与丰富专业经验<br />
+        实现高品质办公空间<br />
+        整合全方位材料资源与丰富专业经验<br />
         实现室内及软装一体化设计<br />
-        定制住宅标准化体系<br />
-        协助房地产商建立完善室内设计管理及运营标准<br />
+        定制智能办公设备<br />
+        协助客户建立完善室内设计管理及运营标准<br />
+        更有优质售后服务<br />
+        从此装修无忧<br />
       </div>
     </div>
 

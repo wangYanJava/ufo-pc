@@ -10,7 +10,7 @@
     </div>
     <div class="btnBox">
       <!-- 导航切换按钮 -->
-      <div class="navBtn" @mouseover="showNav">
+      <div class="navBtn" @click="showNav">
           <img src="../assets/navBtn.png" alt="">
         </div>
     </div>
@@ -515,6 +515,7 @@ export default {
           width: 70%;
           height: 100%;
           float: left;
+          padding-left: 0.2rem;
           .p1{
             width: 52%;
             height: 0.58rem;

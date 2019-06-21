@@ -26,7 +26,7 @@
 										<p>18615777604</p>
 								</h4>
 						</a></li>
-				<li><a href="javascript:;" class="r_tel2">
+				<li class="phone"><a href="javascript:;" class="r_tel2">
 								<img src="../assets/qqIco.png" alt="">
 								<h4><img src="../assets/qqIco.png" alt="">
 										<p>028-85521744</p>
@@ -38,7 +38,7 @@
 			</ul>
 		</div>
 		<!-- 切换导航页面按钮 -->
-		<div class="navBtn" @mouseover="showNav">
+		<div class="navBtn" @click="showNav">
       <img src="../assets/navBtn.png" alt="">
     </div>
     <!-- 左侧导航栏 -->
@@ -177,7 +177,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .homeBox{
 	width: 100%;
 	height: 100%;
@@ -431,7 +431,13 @@ export default {
 	opacity: 1;
 }
 .rightFixed ul li.smile img {
-	width: 0.25rem !important;
+	width: 0.2rem !important;
+	height: auto;
+	margin-top: 0.12rem;
+  margin-left: 0.13rem;
+}
+.rightFixed ul li.phone img {
+	width: 0.2rem !important;
 	height: auto;
 	margin-top: 0.12rem;
   margin-left: 0.13rem;

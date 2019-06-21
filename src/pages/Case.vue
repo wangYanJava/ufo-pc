@@ -4,7 +4,7 @@
       <div class="top">
         <div class="case-logo"><a href="/" title=""><img src="../assets/logoBlack.png"></a></div>
         <!-- 导航切换按钮 -->
-        <div class="navBtn" @mouseover="showNav">
+        <div class="navBtn" @click="showNav">
           <img src="../assets/navBtn.png" alt="">
         </div>
       </div>
@@ -297,10 +297,19 @@ export default {
           // width: 4.6rem;
           // height: 3rem;
           width: 100%;
+          height: 2.3rem;
+        }
+        img:hover{
+          transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          -o-transform: scale(1.1);
+          -moz-transform: scale(1.1);
         }
         h4{
-          font-size: 0.24rem;
-          color: #766e6b;
+          font-family: "HELVETICANEUELTPRO-THEX", "微软雅黑";
+          font-size: 0.16rem;
+          color: #565656;
           margin-top: 0.3rem;
           width: 100%;
           overflow: hidden;/*超出部分隐藏*/
@@ -308,8 +317,8 @@ export default {
           white-space: nowrap;/*规定段落中的文本不进行换行 */
         }
         h6{
-          font-size: 0.18rem;
-          color: #9ba9b2;
+          font-size: 0.14rem;
+          color: #929292;
           margin-top: 0.15rem;
         }
       }

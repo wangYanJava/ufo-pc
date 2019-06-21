@@ -4,7 +4,7 @@
       <div class="top">
         <div class="case-logo"><a href="/" title=""><img src="../assets/logoBlack.png"></a></div>
         <!-- 导航切换按钮 -->
-        <div class="navBtn" @mouseover="showNav">
+        <div class="navBtn" @click="showNav">
           <img src="../assets/navBtn.png" alt="">
         </div>
       </div>
@@ -207,7 +207,7 @@ export default {
 		}
   }
   .content{
-    width: 89.4%;
+    width: 70%;
     height: auto;
     margin: 0 auto;
 		margin-top: 0.8rem;
@@ -229,8 +229,10 @@ export default {
       width: 100%;
       height: auto;
       img{
-        width: 100%;
+        width: 65%;
         height: auto;
+				display: block;
+				margin: 0 auto;
       }
     }
   }

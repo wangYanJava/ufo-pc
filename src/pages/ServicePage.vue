@@ -2,7 +2,7 @@
   <div class="service">
     <div class="btnBox">
       <!-- 导航切换按钮 -->
-      <div class="navBtn" @mouseover="showNav">
+      <div class="navBtn" @click="showNav">
           <img src="../assets/navBtn.png" alt="">
         </div>
     </div>
@@ -30,7 +30,7 @@
       to be realizedwon't be blind at least.
     </div>
     <div class="wrap1">
-      <div  class="item" v-for="(item,index) in list1" :key="index" @click="changeCurrent(item,index)" :class="{currActive1:activeIndex==index}">
+      <div  class="item" v-for="(item,index) in list1" :key="index" @mouseenter="changeCurrent(item,index)" :class="{currActive1:activeIndex==index}">
         <div class="img" :class="{activeImg:activeIndex==index}"></div>
         <div class="blue">
           <p class="p p1">{{item.p1}}</p>
@@ -41,7 +41,7 @@
       <div class="btn">
         <div class="cirBox">
           <!-- <a href="javascript:void(0)" @click="changeCurrent(index)" v-for="index in 4" :key="index" :class="{currActive:activeIndex==index}"> -->
-          <div @click="changeCurrent(item,index)" v-for="(item,index) in list1" :key="index" :class="{currActive2:activeIndex==index}"></div>
+          <div @mouseenter="changeCurrent(item,index)" v-for="(item,index) in list1" :key="index" :class="{currActive2:activeIndex==index}"></div>
         <!-- </a> -->
         </div>
       </div>
@@ -128,13 +128,13 @@
         <div class="next" @click="nextPage(clickCount)">
 
         </div>
-        <div class="serItem" v-for="item in 4" :key="item">
+        <div class="serItem" v-for="(item,index) in currImgList" :key="index">
           <div class="icon"></div>
           <div class="titleBox">
-              办公区域
+              {{item.title}}
           </div>
           <div class="pic">
-            <img src="../assets/casePic.png" alt="">
+            <img :src="item.url" alt="">
           </div>
         </div>
       </div>
@@ -287,13 +287,21 @@ export default {
       },{
         title: '走廊',
         url: require('../assets/rz-13.png')
+      },{
+        title: '理疗室',
+        url: require('../assets/rz-14.png')
+      },{
+        title: '前台',
+        url: require('../assets/rz-15.png')
+      },{
+        title: '宴会厅',
+        url: require('../assets/rz-16.png')
       }
     ]
 
     // 第一次进入是当前页数据列表
       this.currImgList = this.imgList.slice(this.start, this.end)
       this.listCount = Math.ceil(this.imgList.length / 4)
-      console.log(this.listCount)
   },
   methods:{
     lastPage(curr) {
@@ -301,14 +309,30 @@ export default {
       if(this.clickCount < 1) {
         this.clickCount = 1
       }
-      console.log(this.clickCount)
+      this.start = this.start - 4
+      if(this.start < 0){
+        this.start = 0
+      } 
+      this.end = this.end - 4
+      if(this.end < 4){
+        this.end = 4
+      } 
+      this.currImgList = this.imgList.slice(this.start, this.end)
     },
     nextPage(curr) {
       this.clickCount = curr + 1
-      if(this.clickCount > this.listCount) {
-        this.clickCount = this.listCount
+      if(this.clickCount > 3){
+        this.clickCount = 4
       }
-      console.log(this.clickCount)
+      this.start = this.start + 4
+      this.end = this.end + 4
+      if(this.clickCount >= 4){
+        this.clickCount = 4
+        this.start = 12
+        this.end = 16
+      } 
+
+      this.currImgList = this.imgList.slice(this.start, this.end)
     },
     // 鼠标滑过按钮显示导航页
 		showNav(){
@@ -744,7 +768,8 @@ export default {
       .prev{
         width: 0.4rem;
         height: 0.6rem;
-        background: #ccc;
+        background: url('../assets/prev2.png') no-repeat center;
+        background-size: contain;
         position: absolute;
         top: 45%;
         left: -12%;
@@ -753,7 +778,8 @@ export default {
       .next{
         width: 0.4rem;
         height: 0.6rem;
-        background: #ccc;
+        background: url('../assets/next2.png') no-repeat center;
+        background-size: contain;
         position: absolute;
         top: 45%;
         right: -12%;

@@ -188,7 +188,7 @@ export default {
         width: 47.3%;
         height: 100%;
         float: left;
-        padding-top: 0.55rem;
+        padding-top: 0.48rem;
         padding-left: 8.5%;
         ul{
           li{
@@ -203,7 +203,7 @@ export default {
         width: 15%;
         height: 100%;
         float: left;
-        padding-top: 0.55rem;
+        padding-top: 1rem;
         p{
           padding-left: 0.1rem;
           color: #9f9f9f;

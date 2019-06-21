@@ -1,5 +1,5 @@
 <template>
-  <div class="contact">
+  <div :style="height" class="contact">
     <div class="contBox">
       <div class="middlebox">
         <div class="c_1570">
@@ -166,14 +166,21 @@ export default {
   data() {
     return {
       region: ['北京','成都'],
-      currRegionIndex: 1
+      currRegionIndex: 1,
+      height: {
+          height: ''
+        },
     };
   },
   created() {
+    this.getHeight()
     console.log(this.$refs)
       // this.$refs.regionItem.setActiveItem(0)
   },
   methods: {
+    getHeight() {
+        this.height=window.innerHeight+'px';
+    },
     changeRegion(item,index) {
       this.currRegionIndex = index
       if(index === 0){
@@ -200,7 +207,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .contact {
   width: 100%;
   height: 100%;

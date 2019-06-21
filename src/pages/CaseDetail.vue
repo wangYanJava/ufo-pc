@@ -4,7 +4,7 @@
       <div class="top">
         <div class="case-logo"><a href="/" title=""><img src="../assets/logoBlack.png"></a></div>
         <!-- 导航切换按钮 -->
-        <div class="navBtn" @mouseover="showNav">
+        <div class="navBtn" @click="showNav">
 					<img src="../assets/navBtn.png" alt="">
 				</div>
       </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="service">
+  <div :style="height" class="service">
     <div class="contentBox">
       <div class="left">
         <div class="tablebox">
@@ -56,10 +56,14 @@ export default {
     return{
       serviceList: [],
       currServiceIndex: 0,
-      currServiceDetail: {}
+      currServiceDetail: {},
+      height: {
+        height: ''
+      },
     }
   },
   created() {
+    this.getHeight()
     this.$http.get('../../static/case.json').then(resp => {
       console.log(resp)
       this.serviceList = resp.data.service
@@ -67,6 +71,9 @@ export default {
     })
   },
   methods:{
+    getHeight() {
+        this.height=window.innerHeight+'px';
+    },
     changeService(item,index) {
       this.currServiceIndex = index
       this.currServiceDetail = this.serviceList[index]
@@ -80,7 +87,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .service{
   width: 100%;
   height: 9.24rem;

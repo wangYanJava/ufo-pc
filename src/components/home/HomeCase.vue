@@ -1,5 +1,5 @@
 <template>
-    <div class="case">
+    <div :style="height" class="case">
         <!-- 左边菜单项 -->
         <div class="leftBox">
             <div class="contBox">
@@ -58,6 +58,9 @@ export default {
   name: 'HomeCase',
   data() {
       return{
+          height: {
+              height: ''
+          },
           cate: ['办公空间','酒店空间','餐饮空间','别墅空间','其他空间'],
           currCateIndex: 0,
           officeList: {},
@@ -70,6 +73,7 @@ export default {
       }
   },
   created() {
+    this.getHeight()
     this.$http.get('../../static/case.json').then(resp => {
         // console.log(resp)
         this.officeList = resp.data.case[0]
@@ -81,6 +85,10 @@ export default {
     })
   },
   methods: {
+    getHeight() {
+        this.height=window.innerHeight+'px';
+        console.log(this.height)
+    },
     //   切换分类
     changeCate(item,index) {
         this.currCateIndex = index
@@ -115,12 +123,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .case{
     width: 100%;
     height: 9.3rem;
-    margin-top: -4.5%;
-    // padding: 0 3.9%;
     .leftBox{
         width: 28.64%;
         height: 100%;
