@@ -7,6 +7,7 @@
         {
           "name": "联想（兰州）",
           "address": "兰州",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case1-1_lx.png",
           "details": "",
           "order": "1",
           "img": [
@@ -35,12 +36,13 @@
         {
           "name": "G7智能互联",
           "address": "成都",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case1-2_G7.png",
           "details": "",
           "order": "2",
           "img": [
             {
               "order": "1",
-              "url": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E9%A6%96%E9%A1%B5/20190619101926.jpg"
+              "url": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case1-2_G7.png"
             },
             {
               "order": "2",
@@ -67,12 +69,13 @@
         {
           "name": "绵阳智慧城科技有限公司600平Loft办公室风格",
           "address": "绵阳",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case1-3_zhc.png",
           "details": "loft办公室风格案例在日常生活中是比较少见的，主要是以下几点：一、传统行业不能接受这新奇的办公环境，也就是行业局限性；二、60 70后的管理者不认可，也就是年龄欣赏性；三、符合这样条件的办公场地空间难以寻求，条件局限性。loft办公室设计主要以一种工业风呈现在世人眼前，以旧工厂和厂库改造而成的空间形态，这样的设计特点主要体现在流动性、透明性、开放性、艺术性。",
           "order": "3",
           "img": [
             {
               "order": "1",
-              "url": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E9%A6%96%E9%A1%B5/20190619101929.jpg"
+              "url": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case1-3_zhc.png"
             },
             {
               "order": "2",
@@ -99,6 +102,7 @@
         {
           "name": "悉地估计设计顾问（成都）有限公司",
           "address": "成都",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case1-4_xd.png",
           "details": "",
           "order": "4",
           "img": [
@@ -135,6 +139,7 @@
         {
           "name": "北京清华同衡设计研究院",
           "address": "成都",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case1-6_qhth.png",
           "details": "",
           "order": "6",
           "img": [
@@ -159,6 +164,7 @@
         {
           "name": "美联英语教育中心",
           "address": "成都",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case1-7_mlyy.png",
           "details": "",
           "order": "7",
           "img": [
@@ -191,6 +197,7 @@
         {
           "name": "牛津少儿英语培训中心",
           "address": "成都",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case1-8_nj.png",
           "details": "",
           "order": "8",
           "img": [
@@ -223,6 +230,7 @@
         {
           "name": "远锦教育培训中心",
           "address": "成都",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case1-9_yj.png",
           "details": "",
           "order": "9",
           "img": [
@@ -253,6 +261,7 @@
         {
           "name": "港式简约风",
           "address": "深圳",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case2-1_bsganshi.png",
           "details": "代港式风格，简约而不失时尚，是一种典型的码头文化和殖民地文化相结合的产物；人们对装修装饰的效果总是充满希望经济、实用、舒适体现一点味道，而港式简约风不仅注重居住环境的实用性，而且也体现了现代文明的表现；港式风格在空间处理上色彩清冷、线条简单。",
           "order": "1",
           "img": [
@@ -285,6 +294,7 @@
         {
           "name": "法式风格样板房",
           "address": "成都",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case2-2_bsfashi.png",
           "details": "由于人们生活物质水平线上的追求，本案结合整体的楼盘风格以及主打理念，以欧洲法式古典宫廷风格为主，这些繁复的线条，象征了贵族气息的图腾及色彩，大理石及造型线板，暖色调的灯光，浅色的碎花，这些设计元素使空间在低调中略带奢华。通过细腻的手法，多层的线条变现手法，使整个空间如欧式皇宫般富丽堂皇。",
           "order": "2",
           "img": [
@@ -317,6 +327,7 @@
         {
           "name": "天府世家样板房",
           "address": "成都",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case2-3_bstianfu.png",
           "details": "本案设计彰显典雅、浪漫的地中海风情。采用地中海典型的蓝白色为基调，利用回游空间的手法将空间流线合理化，客餐厅空间运用天花横梁处理与抽槽的的设计手法，避免了原建筑结构的弱点，将天花最高点释放，扩大了整个空间的体验感与舒适感。设计有意将地中海建筑风格中的拱形门。用白色开放漆饰面代替了白灰泥墙的建筑特点在室内空间细致的表现出来。客餐厅地面采用爵士白大理石为主色调，用蓝白马赛克波打与精致的蓝色小方砖为点缀，蓝色仿古砖与彩色仿古砖腰线在厨房及卫生间的合理运用将地中海风格表现得淋漓尽致。空间上大面积的蓝与白，软装配饰局部的米色搭配，清澈无瑕，诠释着人们对蓝天白云，碧海银沙的无尽渴望。带有迷藏感的空间格局，提供给居者不同的心理感受。",
           "order": "3",
           "img": [
@@ -353,6 +364,7 @@
         {
           "name": "麓湖样板房",
           "address": "成都",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case2-4_bsluhu.png",
           "details": "",
           "order": "4",
           "img": [
@@ -391,6 +403,7 @@
         {
           "name": "外婆私房菜",
           "address": "深圳",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case3-1_waipo.png",
           "details": "",
           "order": "1",
           "img": [
@@ -439,6 +452,7 @@
         {
           "name": "创意料理餐厅",
           "address": "成都",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case3-2_cyll.png",
           "details": "",
           "order": "2",
           "img": [
@@ -467,6 +481,7 @@
         {
           "name": "小麦町手工面坊",
           "address": "绵阳",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case3-3_xiaomai.png",
           "details": "",
           "order": "3",
           "img": [
@@ -499,6 +514,7 @@
         {
           "name": "桐梓林咖啡馆",
           "address":"成都",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case3-4_tzl.png",
 			    "details":"",
 			    "order":"4",
           "img": [
@@ -537,6 +553,7 @@
         {
           "name": "蓝光己庄酒店-丛林篇",
           "address": "峨眉山",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case4-1_clp.png",
           "details": " 从故事到空间，从二维到三维，——悟啦啦亲子酒店将是一个非比寻常的精彩的设计型亲子酒店。我们的故事从小悟的奇幻历险开始，4个楼层分别对应4个故事主题，48个房间对应48个奇妙故事。房间的墙画都来自于故事内容，空间的色彩从插画中提炼。所有陈设家具的材质和形式都与故事主题相关联。",
           "order": "1",
           "img": [
@@ -577,6 +594,7 @@
         {
           "name": "唯依主题酒店",
           "address": "成都",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case4-9_wy.png",
           "details": "",
           "order": "9",
           "img": [
@@ -609,6 +627,7 @@
         {
           "name": "成都沙湾希尔顿欢朋酒店",
           "address": "成都",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case4-7_cd.png",
           "details": "",
           "order": "7",
           "img": [
@@ -653,6 +672,7 @@
         {
           "name": "蓝光己庄酒店-国学篇",
           "address": "峨眉山",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case4-2_gxp.png",
           "details": " 从故事到空间，从二维到三维，——悟啦啦亲子酒店将是一个非比寻常的精彩的设计型亲子酒店。我们的故事从小悟的奇幻历险开始，4个楼层分别对应4个故事主题，48个房间对应48个奇妙故事。房间的墙画都来自于故事内容，空间的色彩从插画中提炼。所有陈设家具的材质和形式都与故事主题相关联。",
           "order": "2",
           "img": [
@@ -685,6 +705,7 @@
         {
           "name": "蓝光己庄酒店-海洋篇",
           "address": "峨眉山",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case4-3_hyp.png",
           "details": " 从故事到空间，从二维到三维，——悟啦啦亲子酒店将是一个非比寻常的精彩的设计型亲子酒店。我们的故事从小悟的奇幻历险开始，4个楼层分别对应4个故事主题，48个房间对应48个奇妙故事。房间的墙画都来自于故事内容，空间的色彩从插画中提炼。所有陈设家具的材质和形式都与故事主题相关联。",
           "order": "3",
           "img": [
@@ -721,6 +742,7 @@
         {
           "name": "蓝光己庄酒店-星空篇",
           "address": "峨眉山",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case4-4_xkp.png",
           "details": " 从故事到空间，从二维到三维，——悟啦啦亲子酒店将是一个非比寻常的精彩的设计型亲子酒店。我们的故事从小悟的奇幻历险开始，4个楼层分别对应4个故事主题，48个房间对应48个奇妙故事。房间的墙画都来自于故事内容，空间的色彩从插画中提炼。所有陈设家具的材质和形式都与故事主题相关联。",
           "order": "4",
           "img": [
@@ -761,6 +783,7 @@
         {
           "name": "西安华裔酒店",
           "address": "西安",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case4-6_xiAn.png",
           "details": "",
           "order": "6",
           "img": [
@@ -793,6 +816,7 @@
         {
           "name": "半山艺术酒店",
           "address": "成都",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case4-8_bs.png",
           "details": "",
           "order": "8",
           "img": [
@@ -825,6 +849,7 @@
         {
           "name": "峨眉山禅院",
           "address": "峨眉山",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case4-10_ms.png",
           "details": "",
           "order": "10",
           "img": [
@@ -853,6 +878,7 @@
         {
           "name": "同和文化休闲会所",
           "address": "成都",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case4-11_th.png",
           "details": "",
           "order": "11",
           "img": [
@@ -899,6 +925,7 @@
         {
           "name": "万科（售楼处）",
           "address": "南充",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case5-1_wk.png",
           "details": "",
           "order": "1",
           "img": [
@@ -939,6 +966,7 @@
         {
           "name": "EOGO英国英爵影响展厅",
           "address": "成都",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case5-2_EOGO.png",
           "details": "",
           "order": "2",
           "img": [
@@ -975,6 +1003,7 @@
         {
           "name": "婚纱店",
           "address": "成都",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case5-3_hsd.png",
           "details": "",
           "order": "3",
           "img": [
@@ -1007,6 +1036,7 @@
         {
           "name": "电影院",
           "address": "成都",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case5-4_dyy.png",
           "details": "",
           "order": "4",
           "img": [
@@ -1043,6 +1073,7 @@
         {
           "name": "本色酒吧",
           "address": "成都",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case5-5_bsjb.png",
           "details": "",
           "order": "5",
           "img": [
@@ -1075,6 +1106,7 @@
         {
           "name": "金沙国际KTV",
           "address": "成都",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case5-6_ktv.png",
           "details": "",
           "order": "6",
           "img": [
@@ -1119,6 +1151,7 @@
         {
           "name": "魔法肌密",
           "address": "成都",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case5-7_mfjm.png",
           "details": "",
           "order": "7",
           "img": [
@@ -1155,6 +1188,7 @@
         {
           "name": "皇家壹号",
           "address": "德阳",
+          "keyImg": "https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E5%BC%95%E5%9B%BE/case5-8_wk.png",
           "details": "",
           "order": "8",
           "img": [

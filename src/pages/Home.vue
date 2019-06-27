@@ -44,10 +44,10 @@
     <!-- 左侧导航栏 -->
       <ul class="leftnav">
         <li data-menuanchor="1" class="first" @click="scroll(0,0)"><a href="javascrip:viod(0)" title="蔚蓝公装">1<span>蔚蓝公装</span></a></li>
-        <li data-menuanchor="2" @click="scroll(0,910)"><a href="javascrip:viod(0)" title="案例">2<span>案例</span></a></li>
-        <li data-menuanchor="3" @click="scroll(0,1840)"><a href="javascrip:viod(0)" title="服务">3<span>服务</span></a></li>
-        <li data-menuanchor="4" @click="scroll(0,2764)"><a href="javascrip:viod(0)" title="客户">4<span>客户</span></a></li>
-        <li data-menuanchor="5" @click="scroll(0,3662)"><a href="javascrip:viod(0)" title="联系">5<span>联系</span></a></li>
+        <li data-menuanchor="2" @click="scroll(0,scrollHight*1)"><a href="javascrip:viod(0)" title="案例">2<span>案例</span></a></li>
+        <li data-menuanchor="3" @click="scroll(0,scrollHight*2)"><a href="javascrip:viod(0)" title="服务">3<span>服务</span></a></li>
+        <li data-menuanchor="4" @click="scroll(0,scrollHight*3)"><a href="javascrip:viod(0)" title="客户">4<span>客户</span></a></li>
+        <li data-menuanchor="5" @click="scroll(0,scrollHight*4)"><a href="javascrip:viod(0)" title="联系">5<span>联系</span></a></li>
     </ul>
     <!-- 手机可见菜单 -->
     <!-- <div class="pz_top visible-xs">
@@ -121,10 +121,18 @@ export default {
 	},
 	data() {
 		return{
-			isShowNav: false
+			isShowNav: false,
+			scrollHight: '',
 		}
 	},
+	created() {
+		this.getHeight()
+	},
 	methods: {
+		getHeight() {
+				this.scrollHight=window.innerHeight;
+				// console.log(this.scrollHight)
+    },
 		// 滚动条
 		scroll(x,y){
 			window.scroll(x,y);

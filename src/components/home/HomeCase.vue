@@ -31,7 +31,7 @@
                                 <h5>{{item.address}}</h5>
                                 <h3 class="elli">{{item.name}}</h3>
                                 <div class="img">
-                                    <img :src="item.img[0].url" alt="" title="">
+                                    <img :src="item.keyImg" alt="" title="">
                                 </div>
                                 <div class="p">
                                     <p></p>
@@ -82,6 +82,7 @@ export default {
         this.hotelList = resp.data.case[3]
         this.otherList = resp.data.case[4]
         this.currentList = this.officeList
+        console.log(this.currentList.data)
     })
   },
   mounted(){

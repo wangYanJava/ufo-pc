@@ -27,7 +27,7 @@
   <div class="caseList">
     <ul>
       <li v-for="(item,index) in currentCaseList" :key="index" @click="detail(item,index)">
-        <img :src="item.img[0].url" alt="">
+        <img :src="item.keyImg" alt="">
         <h4>{{item.name}}</h4>
         <h6>{{item.address}}</h6>
       </li>
@@ -294,10 +294,8 @@ export default {
         margin-left: 0.15rem;
         cursor: pointer;
         img{
-          // width: 4.6rem;
-          // height: 3rem;
           width: 100%;
-          height: 2.3rem;
+          // height: 2.3rem;
         }
         img:hover{
           transform: scale(1.1);
