@@ -14,11 +14,11 @@ export default {
 .footer{
   width: 100%;
   text-align: center;
-  padding: 21px 10px;
-  font-size: 14px;
-  line-height: 24px;
+  padding: 0.21rem 0.05rem;
+  font-size: 0.14rem;
+  line-height: 0.24rem;
   color: rgba(255,255,255,0.2);
-  height: 66px;
+  height: 0.66rem;
   float: left;
   position: absolute;
   left: 0;

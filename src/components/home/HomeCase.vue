@@ -5,7 +5,7 @@
             <div class="contBox">
                 <div class="tablebox">
                     <div class="middlebox">
-                        <div class="tit_1">案例<span>/case</span><h1>c&nbsp;a&nbsp;s&nbsp;e</h1></div>
+                        <div class="tit_1">案例<span>/case</span><h1 class="hidden-xs">c&nbsp;a&nbsp;s&nbsp;e</h1></div>
                             <div class="slick_res1r">
                                 <div v-for="(item,index) in cate" :key="index">
                                     <li class="l1" @click="changeCate(item,index)" :class="{currCate:currCateIndex==index}">
@@ -19,7 +19,7 @@
             </div>
         </div>
         <!-- 中间灰色部分 -->
-        <div class="middleBox">
+        <div class="middleBox hidden-xs">
             <div class="title"><span>{{currCateName}}</span></div>
         </div>
         <!-- 右边展示案例 -->
@@ -40,8 +40,16 @@
                         </div>
                 </li>
             </ul>
+             <div class="yd_moreBtn visible-xs">
+                 <div class="moreBtn">
+                    <a href="javascript:void(0)" @click="allCase">
+                        <span>全部案例</span>
+                        <img src="http://www.chuangwudao.com/templates/cn/images/index1_6.png" alt="">
+                    </a>
+                </div>
+            </div>
             <!-- 右侧按钮 -->
-            <div class="rightBtn">
+            <div class="rightBtn hidden-xs">
                 <div class="moreBtn">
                     <a href="javascript:void(0)" @click="allCase">
                         <span>全部案例</span>
@@ -49,6 +57,7 @@
                     </a>
                 </div>
             </div>
+            <!-- 移动端查看更多案例按钮 -->
         </div>
     </div>
 </template>
@@ -82,7 +91,7 @@ export default {
         this.hotelList = resp.data.case[3]
         this.otherList = resp.data.case[4]
         this.currentList = this.officeList
-        console.log(this.currentList.data)
+        // console.log(this.currentList.data)
     })
   },
   mounted(){
@@ -456,6 +465,102 @@ export default {
                 }
             }
         }
+    }
+}
+</style>
+<style>
+@media screen and (max-width:767px){
+    .case{
+        width: 100%;
+        height: 335px !important;
+        margin-top: 35px;
+    }
+    .case .leftBox .contBox{
+        width: 100%;
+        padding-left: 0.1rem;
+    }
+    .case .leftBox .contBox .tablebox .middlebox .slick_res1r .l1{
+        margin-top: 0.45rem;
+        width: 90%;
+    }
+    .case .leftBox .contBox .tablebox .middlebox .slick_res1r .l1 .ico{
+        width: 0.35rem;
+    }
+    .case .rightShowCase{
+        width: 71%;
+        padding: 10px 0;
+        position: relative;
+    }
+    .case .rightShowCase ul{
+        width: 100%;
+        height: 87%;
+    }
+    .case .rightShowCase ul li{
+        width: 49%;
+        height: 45%;
+        margin-bottom: 2%;
+        margin-top: 5%;
+        border: none;
+        padding: 0;
+    }
+    .case .rightShowCase ul li:hover{
+        padding-top: 0;
+    }
+    .case .rightShowCase ul li:hover .tablebox .middlebox .img{
+        background: none;
+    }
+    .case .rightShowCase ul li .tablebox .middlebox .img {
+        margin-top: 3px;
+    }
+    .case .rightShowCase ul li .tablebox .middlebox h3{
+        width: 90%;
+    }
+    .case .yd_moreBtn{
+        width: 100%;
+        height: 13%;
+        position: absolute;
+        bottom: 0;
+    }
+    .case .yd_moreBtn .moreBtn{
+        width: 100%;
+        height: 100%;
+    }
+    .case .yd_moreBtn .moreBtn a{
+        display: block;
+        width: 1.4rem;
+        height: 0.45rem;
+        background: url('../../assets/blueBg.png');
+        background-size: 100% 100%;
+        line-height: 0.45rem;
+        text-align: center;
+        position: relative;
+        float: right;
+        margin-right: 5%;
+        margin-top: 3%;
+    }
+    .case .yd_moreBtn .moreBtn a span {
+        display: block;
+        height: 0.45rem;
+        line-height: 0.45rem;
+        overflow: hidden;
+        font-size: 0.15rem;
+        color: white;
+        float: left;
+        margin-top: -3px;
+        width: 75%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        padding-top: 1.5%;
+    }
+    .case .yd_moreBtn .moreBtn a img {
+        vertical-align: middle;
+        display: inline-block;
+        margin-top: -0.02rem;
+        position: absolute;
+        height: 0.3rem;
+        top: 20%;
+        right: 12%;
     }
 }
 </style>

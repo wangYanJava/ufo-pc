@@ -6,7 +6,7 @@
           <div class="tit_1 tit_1_w">
             联系
             <span>/contact</span>
-            <h1>c&nbsp;o&nbsp;n&nbsp;t&nbsp;a&nbsp;c&nbsp;t</h1>
+            <h1 class="hidden-xs">c&nbsp;o&nbsp;n&nbsp;t&nbsp;a&nbsp;c&nbsp;t</h1>
           </div>
           <div class="row_1">
             <div class="hometop">
@@ -147,8 +147,8 @@
           </div>
         </div>
         <!-- 切换箭头 -->
-        <div class="prev" @click="toPrev"></div>
-        <div class="next" @click="toNext"></div>
+        <div class="prev hidden-xs" @click="toPrev"></div>
+        <div class="next hidden-xs" @click="toNext"></div>
       </div>
     </div>
     <!-- 网页脚部 -->
@@ -274,7 +274,7 @@ export default {
             .hometop {
                 width: 100%;
                 float: left;
-                margin-top: 73px;
+                margin-top: 0.73rem;
                 position: relative;
                 ul{
                     width: 100%;
@@ -287,7 +287,7 @@ export default {
                     li{
                         width: 25%;
                         float: left;
-                        padding: 0 2px;
+                        padding: 0 0.02rem;
                         -webkit-transition: all 0.3s ease-out 0s;
                         -moz-transition: all 0.3s ease-out 0s;
                         -o-transition: all 0.3s ease-out 0s;
@@ -299,7 +299,7 @@ export default {
                             float: left;
                             background: black;
                             background: rgba(27,25,37,0.8);
-                            padding: 63px 30px 0 30px;
+                            padding: 0.63rem 0.3rem 0 0.3rem;
                             text-align: center;
                             -webkit-transition: all 0.3s ease-out 0s;
                             -moz-transition: all 0.3s ease-out 0s;
@@ -307,7 +307,7 @@ export default {
                             transition: all 0.3s ease-out 0s;
                             .ico{
                                 width: 100%;
-                                height: 45px;
+                                height: 0.45rem;
                                 -webkit-transition: all 0.3s ease-out 0s;
                                 -moz-transition: all 0.3s ease-out 0s;
                                 -o-transition: all 0.3s ease-out 0s;
@@ -330,13 +330,13 @@ export default {
                             }
                             h4{
                                 width: 100%;
-                                margin-top: 8px;
-                                font-size: 18px;
+                                margin-top: 0.08rem;
+                                font-size: 0.18rem;
                                 color: white;
-                                line-height: 24px;
+                                line-height: 0.24rem;
                                 text-transform: uppercase;
                                 font-family: 'OPENSANS-BOLD';
-                                letter-spacing: 1px;
+                                letter-spacing: 0.01rem;
                                 -webkit-transition: all 0.3s ease-out 0s;
                                 -moz-transition: all 0.3s ease-out 0s;
                                 -o-transition: all 0.3s ease-out 0s;
@@ -345,11 +345,11 @@ export default {
                             }
                             .p{
                                 width: 100%;
-                                margin-top: 18px;
-                                font-size: 14px;
+                                margin-top: 0.18rem;
+                                font-size: 0.14rem;
                                 color: white;
-                                line-height: 24px;
-                                letter-spacing: 1px;
+                                line-height: 0.24rem;
+                                letter-spacing: 0.01rem;
                                 opacity: 0.8;
                                 word-wrap: break-word;
                                 -webkit-transition: all 0.3s ease-out 0s;
@@ -366,14 +366,14 @@ export default {
       .tab{
         width: 100%;
         float: left;
-        margin-top: 25px;
+        margin-top: 0.25rem;
         position: relative;
         text-align: center;
         height: 0.64rem;
         .homedown {
           display: inline-block;
           float: none;
-          width: 585px;
+          width: 5.85rem;
           z-index: 3;
           position: absolute;
           z-index: 3;
@@ -389,17 +389,17 @@ export default {
             .ico {
               width: 100%;
               float: left;
-              height: 21px;
+              height: 0.21rem;
               background: url('../../assets/c-bg1.png') no-repeat center center;
               background-size: contain;
             }
             h4 {
               width: 100%;
               float: left;
-              margin-top: 10px;
-              font-size: 18px;
+              margin-top: 0.1rem;
+              font-size: 0.18rem;
               color: white;
-              line-height: 30px;
+              line-height: 0.3rem;
               opacity: 0.6;
             }
           }
@@ -418,11 +418,11 @@ export default {
       .tab::before{
         content: '';
         width: 100%;
-        height: 3px;
+        height: 0.03rem;
         background: #3a3945;
         position: absolute;
         left: 0;
-        top: 9px;
+        top: 0.09rem;
         z-index: 2;
       }
       .prev{
@@ -452,39 +452,12 @@ export default {
 }
 </style>
 <style>
-/* .row_1 .hometop{
-    position: relative;
-}
-.row_1 .hometop .el-carousel__container{
-    position: relative;
-} */
 .hometop .el-carousel__arrow{
   display: none !important;
 }
 .hometop .el-carousel .el-carousel__indicators{
   display: none;
 }
-/* .hometop .el-carousel .el-carousel__indicators{
-  width: 100%;
-  float: left;
-  margin-top: 32px;
-  position: static;
-  text-align: center;
-}
-.hometop .el-carousel .el-carousel__indicators .el-carousel__indicator{
-  width: 1.62rem;
-  display: block;
-}
-.hometop .el-carousel .el-carousel__indicators::before{
-  content: '';
-  width: 100%;
-  height: 3px;
-  background: #3a3945;
-  position: absolute;
-  left: 0;
-  top: 340px;
-  z-index: 2;
-} */
 
 .contact .contBox .middlebox .c_1570 .row_1 .hometop ul{
   height: 100%;
@@ -501,6 +474,26 @@ export default {
   -webkit-transform: scale(1.5,1.5) rotateY(180deg);
   -o-transform: scale(1.5,1.5) rotateY(180deg);
   -moz-transform: scale(1.5,1.5) rotateY(180deg);
+}
+
+@media screen and (max-width: 767px){
+  .contact{
+    height: 540px !important;
+  }
+  .contact .contBox .middlebox .c_1570{
+    padding: 0 0.35rem;
+  }
+  .contact .contBox .middlebox .c_1570 .row_1 .hometop{
+    margin-top: 0.5rem;
+  }
+  .contact .contBox .middlebox .c_1570 .row_1 .hometop ul li{
+    width: 48%;
+    height: 48%;
+    margin-bottom: 1%;
+  }
+  .contact .contBox .middlebox .tab .homedown{
+    width: 70%;
+  }
 }
 </style>
 

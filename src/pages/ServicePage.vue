@@ -172,27 +172,27 @@
       </div>
       <div id="navSlide" class="ph_menu">
               <div class='nav_box'>
-                  <li class="nli l1" id="nav_1">
-                      <p><span @click="toHome"><a href="javascrip:viod(0)" target="_self" class="l1_a" title="首 页">首 页<i>Home</i></a></span></p>
-                  </li>
-                  <li class="nli l2" id="nav_2">
-                      <p><span @click="toCasePage"><a href="javascrip:viod(0)" target="_self" class="l1_a" title="我 们">案 例<i>Case</i></a></span>
-                      </p>
-                  </li>
-                  <li class="nli l3" id="nav_3">
-                      <p><span @click="toService"><a href="javascrip:viod(0)" target="_self" class="l1_a" title="案 例">服 务<i>Service</i></a></span></p>
-                  </li>
-                  <li class="nli l5" id="nav_5">
-                      <p><span @click="toCurpartner"><a href="javascrip:viod(0)" target="_self" class="l1_a" title="客 户">客 户<i>Customer</i></a></span>
-                      </p>
-                  </li>
-                  <li class="nli l6" id="nav_6">
-                      <p><span @click="toNews"><a href="javascrip:viod(0)" target="_self" class="l1_a" title="新 闻">新 闻<i>News</i></a></span></p>
-                  </li>
-                  <li class="nli l4" id="nav_4">
-                      <p><span @click="toAbout"><a href="javascrip:viod(0)" target="_self" class="l1_a" title="服 务">我 们<i>About</i></a></span></p>
-                  </li>
-              </div>
+                <li class="nli l1" id="nav_1">
+                    <p><span @click="toHome"><a href="/#/home" target="_self" class="l1_a" title="首 页">首 页<i>Home</i></a></span></p>
+                </li>
+                <li class="nli l2" id="nav_2">
+                    <p><span @click="toCasePage"><a href="/#/case" target="_self" class="l1_a" title="我 们">案 例<i>Case</i></a></span>
+                    </p>
+                </li>
+                <li class="nli l3" id="nav_3">
+                    <p><span @click="toService"><a href="/#/service" target="_self" class="l1_a" title="案 例">服 务<i>Service</i></a></span></p>
+                </li>
+								<li class="nli l5" id="nav_5">
+                    <p><span @click="toCurpartner"><a href="/#/curpartner" target="_self" class="l1_a" title="客 户">客 户<i>Customer</i></a></span>
+                    </p>
+                </li>
+                <li class="nli l6" id="nav_6">
+                    <p><span @click="toNews"><a href="/#/news" target="_self" class="l1_a" title="新 闻">新 闻<i>News</i></a></span></p>
+                </li>
+								<li class="nli l4" id="nav_4">
+                    <p><span @click="toAbout"><a href="/#/about" target="_self" class="l1_a" title="服 务">我 们<i>About</i></a></span></p>
+                </li>
+            </div>
           </div>
       </div>
   </div>
@@ -876,12 +876,12 @@ export default {
     transition: all 0.3s ease-out 0s;
     .closed{
 			width: 100%;
-			height: 120px;
+			height: 1.2rem;
 			float: left;
 			padding: 0.4rem 0.4rem 0 0.6rem;
 			.logo{
 				float: left;
-    		margin-top: 7px;
+    		margin-top: 0.07rem;
 				width: 2.04rem;
 				img{
 					width: 100%;
@@ -891,8 +891,8 @@ export default {
 			.pf_menu_btn{
 				float: right;
 				cursor: pointer;
-				width: 40px;
-				margin-right: 30px;
+				width: 0.4rem;
+				margin-right: 0.3rem;
 				img{
 					width: 100%;
 					float: left;
@@ -911,7 +911,7 @@ export default {
 		.ph_menu {
 			position: absolute;
 			left: 0;
-			top: 120px;
+			top: 1.2rem;
 			height: 100%;
 			width: 100%;
 			text-align: left;
@@ -925,13 +925,13 @@ export default {
 					float: left;
 					position: relative;
 					height: 100%;
-					width: 16.666%;
-					border-right: solid 1px #353536;
+					width: 16.66%;
+					border-right: solid 0.01rem #353536;
 					p{
 						span{
 							float: left;
 							width: 100%;
-							padding-top: 56px;
+							padding-top: 0.56rem;
 							text-align: center;
 							-webkit-transition: all 0.3s ease-out 0s;
 							-moz-transition: all 0.3s ease-out 0s;
@@ -941,16 +941,16 @@ export default {
 								float: left;
 								width: 100%;
 								color: #fff;
-								font-size: 24px;
-								line-height: 32px;
-								padding: 0 10px;
+								font-size: 0.24rem;
+								line-height: 0.32rem;
+								padding: 0 0.1rem;
 								position: relative;
 								i{
 									display: block;
 									width: 100%;
-									font-size: 14px;
+									font-size: 0.14rem;
 									color: #aeaeae;
-									line-height: 18px;
+									line-height: 0.18rem;
 									text-transform: uppercase;
 									font-style: normal;
 								}
@@ -967,42 +967,19 @@ export default {
 						}
 					}
 					span {
-						padding-top: 78px;
+						padding-top: 0.78rem;
 					}
 				}
 			}
 		}
-  }
-  .page{
-    width: 100%;
-    height: 1.14rem;
-    display: block;
-    .el-pagination {
-      white-space: nowrap;
-      padding: 2px 5px;
-      color: #fff;
-      font-weight: 700;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .el-pager{
-        .active{
-          background-color: #3f3f3f;
-        }
-      }
-    }
   }
   .navPageShow{
 		left: 0;
 	}
 }
 </style>
-<style>
+<style scoped>
 @media screen and (max-width: 1360px){
-  .service .wrap1{
-    /* height: 6.25rem !important; */
-  }
   .service .wrap1 .item .blue{
     height: 2.95rem !important;
   }
@@ -1042,6 +1019,24 @@ export default {
   .service .wrap1 .item .blue{
     height: 3.2rem !important;
   }
+}
+@media screen and (max-width: 767px){
+  .service .navPage .ph_menu .nav_box{
+		padding-top: 50px;
+	}
+	.service .navPage .ph_menu .nav_box .nli{
+		float: none;
+		width: 100%;
+		height: 60px;
+		padding: 0 5%;
+		margin-bottom: 20px;
+	}
+	.service .navPage .ph_menu .nav_box .nli:hover span{
+		padding-top: 0;
+	}
+	.service .navPage .ph_menu .nav_box .nli p span{
+		padding-top: 0;
+	}
 }
 </style>
 

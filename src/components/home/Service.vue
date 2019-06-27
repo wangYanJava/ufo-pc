@@ -5,7 +5,7 @@
         <div class="tablebox">
           <div class="middlebox">
               <div class="tit_1 tit_1_w">服务<span>/service</span>
-                  <h1>s&nbsp;e&nbsp;r&nbsp;v&nbsp;i&nbsp;c&nbsp;e</h1>
+                  <h1 class="hidden-xs">s&nbsp;e&nbsp;r&nbsp;v&nbsp;i&nbsp;c&nbsp;e</h1>
               </div>
               <div class="slick_res2l">
                   <div>
@@ -35,9 +35,9 @@
                   <div v-for="(item,index) in serviceList" :key="index">
                       <li class="l1" @click="changeService(item,index)" :class="{currService:currServiceIndex==index}">
                           <div class="zbox">
-                              <div class="ico"><img :src="item.ico"></div>
+                              <div class="ico hidden-xs"><img :src="item.ico"></div>
                               <h4>{{item.title}}</h4>
-                              <h5>{{item.title2}}</h5>
+                              <h5 class="hidden-xs">{{item.title2}}</h5>
                           </div>
                       </li>
                   </div>
@@ -132,7 +132,7 @@ export default {
               letter-spacing: 1px;
               line-height: 0.5rem;
               span{
-                font-size: 24px;
+                font-size: 0.24rem;
                 color: #fff;
                 opacity: 0.6;
                 text-transform: uppercase;
@@ -346,17 +346,76 @@ export default {
  .service .contentBox .right .tablebox .middlebox .slick_res2r li .zbox {
     height: 90px !important;
   }
-.service .contentBox .right .tablebox .middlebox .slick_res2r li .zbox .ico {
-    width: 44px !important;
-    height: 44px !important;
-    margin-top: -22px !important;
+  .service .contentBox .right .tablebox .middlebox .slick_res2r li .zbox .ico {
+      width: 44px !important;
+      height: 44px !important;
+      margin-top: -22px !important;
+    }
+  .service .contentBox .right .tablebox .middlebox .slick_res2r li .zbox h4 {
+      font-size: 0.16rem !important;
+      line-height: 0.32rem;
   }
- .service .contentBox .right .tablebox .middlebox .slick_res2r li .zbox h4 {
-    font-size: 0.16rem !important;
-    line-height: 0.32rem;
+  .service .contentBox .right .tablebox .middlebox .slick_res2r li .zbox h5 {
+      line-height: 0.16rem !important;
+  }
 }
-.service .contentBox .right .tablebox .middlebox .slick_res2r li .zbox h5 {
-    line-height: 0.16rem !important;
-}
+@media screen and (max-width:767px){
+  .service{
+    height: 375px !important;
+    margin-top: 10px;
+  }
+  .service .contentBox{
+    width: 95%;
+  }
+  .service .contentBox .left {
+    width: 81%;
+    padding-top: 7%;
+  }
+  .service .contentBox .right{
+    width: 18.85%;
+  }
+  .service .contentBox .left .tablebox .middlebox{
+    display: block;
+  }
+  .service .contentBox .left .tablebox .middlebox .slick_res2l{
+    height: 62.2%;
+  }
+  .service .contentBox .right .tablebox .middlebox .slick_res2r li {
+    padding: 0 !important;
+    height: 47px;
+  }
+  .service .contentBox .left .tablebox .middlebox .slick_res2l .zbox{
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+    padding-top: 5% !important;
+  }
+  .service .contentBox .left .tablebox .middlebox .slick_res2l .zbox .img{
+    width: 75% !important;
+    float: none;
+  }
+  .service .contentBox .left .tablebox .middlebox .slick_res2l .zbox .text{
+    margin-left: 0 !important;
+    margin-top: 20px !important;
+  }
+  .service .contentBox .right .tablebox .middlebox .slick_res2r li .zbox h4 {
+    padding-left: 10%;
+    padding-top: 10%;
+  }
+  .service .contentBox .right .tablebox .middlebox .slick_res2r li .zbox {
+    height: 47px !important;
+  }
+  .service .contentBox .left .tablebox .middlebox .slick_res2l .zbox .text .p{
+    font-size: 0.18rem;
+    height: 1rem;
+  }
+  .service .contentBox .left .tablebox .middlebox .slick_res2l .zbox .text .detail a{
+    width: 0.55rem;
+    height: 0.55rem;
+    line-height: 0.6rem;
+    margin-bottom: 2%;
+  }
 }
 </style>

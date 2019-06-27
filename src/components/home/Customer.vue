@@ -3,7 +3,7 @@
     <div class="contentWrap">
       <div class="middlebox">
         <div class="tit_1">客户<span>/customer</span>
-            <h1>C&nbsp;u&nbsp;s&nbsp;t&nbsp;o&nbsp;m&nbsp;e&nbsp;r</h1>
+            <h1 class="hidden-xs">C&nbsp;u&nbsp;s&nbsp;t&nbsp;o&nbsp;m&nbsp;e&nbsp;r</h1>
             <div class="more"><a href="javascript:void(0)" title="" @click="toMore">查看更多+</a></div>
         </div>
         <div class="dl">
@@ -81,26 +81,26 @@
                     </div>
                 </div>
 
-                <li class="l1">
+                <li class="l1 hidden-xs">
                     <a href="javascript: void(0)">
                       <div class="logo"><img src="../../assets/logo1.jpg"></div>
                     </a>
                 </li>
 
-                <li class="l1">
+                <li class="l1 hidden-xs">
                     <a href="javascript: void(0)">
                       <div class="logo"><img src="../../assets/logo2.jpg"></div>
                     </a>
                 </li>
 
-                <li class="l1">
+                <li class="l1 hidden-xs">
                     <a href="javascript: void(0)">
                       <div class="logo"><img src="../../assets/logo3.jpg"></div>
                     </a>
                 </li>
 
             </div>
-            <div class="dd d0">
+            <div class="dd d0 hidden-xs">
 
                 <li class="l1">
                     <a href="javascript: void(0)">
@@ -484,5 +484,42 @@ export default {
     color: #fff;
     line-height: 0.24rem;
     opacity: 0.8;
+}
+@media screen and (max-width: 767px){
+  .customer{
+    height: 495px !important;
+    padding-top: 10%;
+  }
+  .customer .contentWrap{
+    width: 90%;
+  }
+  .customer .contentWrap .middlebox .tit_1 .more a{
+    background-size: auto 100%;
+  }
+  .customer .contentWrap .middlebox{
+    display: block;
+  }
+  .customer .contentWrap .middlebox .dl .dd{
+    width: 100%;
+    float: none;
+  }
+  .customer .contentWrap .middlebox .dl .dd .l1{
+    width: 33%;
+  }
+  .customer .contentWrap .middlebox .dl .dd.d1{
+    width: 100%;
+  }
+  .customer .contentWrap .middlebox .dl .dd.d1 .number .number_t .l2 h3{
+    margin: 0;
+  }
+  .customer .contentWrap .middlebox .dl .dd.d1 .number .number_b{
+    padding-top: 0;
+  }
+  .customer .contentWrap .middlebox .dl .dd.d1 .number .number_b .l2 h3 b{
+    /* font-size: 0.35rem !important; */
+  }
+  .customer .contentWrap .middlebox .dl .dd.d1 .number .number_b .l2 h3{
+    font-size: 0.2rem !important;
+  }
 }
 </style>

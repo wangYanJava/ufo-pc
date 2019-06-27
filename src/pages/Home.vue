@@ -9,10 +9,16 @@
           </div>
       </div>
     </div>
+		<!-- 移动端头部 -->
+		<div class="yd_top visible-xs">
+			<div class="logo">
+				<img src="../assets/logoBlack.png">
+			</div>
+		</div>
     <!-- 轮播图 -->
     <banner></banner>
 		<!-- 右侧固定联系方式 -->
-		<div class="rightFixed">
+		<div class="rightFixed hidden-xs">
 			<ul>
 				<li>
 						<img src="../assets/weixinIco.png" alt="">
@@ -42,7 +48,7 @@
       <img src="../assets/navBtn.png" alt="">
     </div>
     <!-- 左侧导航栏 -->
-      <ul class="leftnav">
+      <ul class="leftnav hidden-xs">
         <li data-menuanchor="1" class="first" @click="scroll(0,0)"><a href="javascrip:viod(0)" title="蔚蓝公装">1<span>蔚蓝公装</span></a></li>
         <li data-menuanchor="2" @click="scroll(0,scrollHight*1)"><a href="javascrip:viod(0)" title="案例">2<span>案例</span></a></li>
         <li data-menuanchor="3" @click="scroll(0,scrollHight*2)"><a href="javascrip:viod(0)" title="服务">3<span>服务</span></a></li>
@@ -79,24 +85,24 @@
 		<div id="navSlide" class="ph_menu">
             <div class='nav_box'>
                 <li class="nli l1" id="nav_1">
-                    <p><span @click="toHome"><a href="javascrip:viod(0)" target="_self" class="l1_a" title="首 页">首 页<i>Home</i></a></span></p>
+                    <p><span @click="toHome"><a href="/#/home" target="_self" class="l1_a" title="首 页">首 页<i>Home</i></a></span></p>
                 </li>
                 <li class="nli l2" id="nav_2">
-                    <p><span @click="toCasePage"><a href="javascrip:viod(0)" target="_self" class="l1_a" title="我 们">案 例<i>Case</i></a></span>
+                    <p><span @click="toCasePage"><a href="/#/case" target="_self" class="l1_a" title="我 们">案 例<i>Case</i></a></span>
                     </p>
                 </li>
                 <li class="nli l3" id="nav_3">
-                    <p><span @click="toService"><a href="javascrip:viod(0)" target="_self" class="l1_a" title="案 例">服 务<i>Service</i></a></span></p>
+                    <p><span @click="toService"><a href="/#/service" target="_self" class="l1_a" title="案 例">服 务<i>Service</i></a></span></p>
                 </li>
 								<li class="nli l5" id="nav_5">
-                    <p><span @click="toCurpartner"><a href="javascrip:viod(0)" target="_self" class="l1_a" title="客 户">客 户<i>Customer</i></a></span>
+                    <p><span @click="toCurpartner"><a href="/#/curpartner" target="_self" class="l1_a" title="客 户">客 户<i>Customer</i></a></span>
                     </p>
                 </li>
                 <li class="nli l6" id="nav_6">
-                    <p><span @click="toNews"><a href="javascrip:viod(0)" target="_self" class="l1_a" title="新 闻">新 闻<i>News</i></a></span></p>
+                    <p><span @click="toNews"><a href="/#/news" target="_self" class="l1_a" title="新 闻">新 闻<i>News</i></a></span></p>
                 </li>
 								<li class="nli l4" id="nav_4">
-                    <p><span @click="toAbout"><a href="javascrip:viod(0)" target="_self" class="l1_a" title="服 务">我 们<i>About</i></a></span></p>
+                    <p><span @click="toAbout"><a href="/#/about" target="_self" class="l1_a" title="服 务">我 们<i>About</i></a></span></p>
                 </li>
             </div>
         </div>
@@ -225,14 +231,27 @@ export default {
 		}
 	}
 	.navPage{
+		position: fixed;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    top: 0;
+    display: block !important;
+    float: left;
+    z-index: 101;
+    background: rgba(0,0,0,0.8);
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
 		.closed{
 			width: 100%;
-			height: 120px;
+			height: 1.2rem;
 			float: left;
 			padding: 0.4rem 0.4rem 0 0.6rem;
 			.logo{
 				float: left;
-    		margin-top: 7px;
+    		margin-top: 0.07rem;
 				width: 2.04rem;
 				img{
 					width: 100%;
@@ -242,8 +261,8 @@ export default {
 			.pf_menu_btn{
 				float: right;
 				cursor: pointer;
-				width: 40px;
-				margin-right: 30px;
+				width: 0.4rem;
+				margin-right: 0.3rem;
 				img{
 					width: 100%;
 					float: left;
@@ -262,12 +281,12 @@ export default {
 		.ph_menu {
 			position: absolute;
 			left: 0;
-			top: 120px;
+			top: 1.2rem;
 			height: 100%;
 			width: 100%;
 			text-align: left;
 			overflow: hidden;
-			border-top: solid 1px #353536;
+			border-top: solid 0.01rem #353536;
 			.nav_box {
 				width: 100%;
 				position: relative;
@@ -282,7 +301,7 @@ export default {
 						span{
 							float: left;
 							width: 100%;
-							padding-top: 56px;
+							padding-top: 0.56rem;
 							text-align: center;
 							-webkit-transition: all 0.3s ease-out 0s;
 							-moz-transition: all 0.3s ease-out 0s;
@@ -292,16 +311,16 @@ export default {
 								float: left;
 								width: 100%;
 								color: #fff;
-								font-size: 24px;
-								line-height: 32px;
-								padding: 0 10px;
+								font-size: 0.24rem;
+								line-height: 0.32rem;
+								padding: 0 0.1rem;
 								position: relative;
 								i{
 									display: block;
 									width: 100%;
-									font-size: 14px;
+									font-size: 0.14rem;
 									color: #aeaeae;
-									line-height: 18px;
+									line-height: 0.18rem;
 									text-transform: uppercase;
 									font-style: normal;
 								}
@@ -318,7 +337,7 @@ export default {
 						}
 					}
 					span {
-						padding-top: 78px;
+						padding-top: 0.78rem;
 					}
 				}
 			}
@@ -332,21 +351,21 @@ export default {
 <style>
 .rightFixed{
 	position: fixed;
-	right: 31px;
+	right: 0.31rem;
 	top: 50%;
-	margin-top: -101px;
+	margin-top: -1.01rem;
 	z-index: 8;
 }
 .rightFixed ul {
-	width: 50px;
+	width: 0.5rem;
 	float: left;
 	background: #474747;
 }
 .rightFixed ul li {
-	width: 50px;
-	height: 51px;
+	width: 0.5rem;
+	height: 0.51rem;
 	float: left;
-	border-top: solid 1px #575757;
+	border-top: solid 0.01rem #575757;
 	position: relative;
 	overflow: hidden;
 	cursor: pointer;
@@ -375,16 +394,16 @@ export default {
     position: absolute;
     right: -100px;
     top: 0;
-    width: 173px;
+    width: 1.73rem;
     text-align: center;
-    height: 50px;
-    line-height: 50px;
+    height: 0.5rem;
+    line-height: 0.5rem;
     color: white;
-    font-size: 16px;
+    font-size: 0.16rem;
     font-family: Arial;
     opacity: 0;
     z-index: 2;
-    letter-spacing: 1px;
+    letter-spacing: 0.01rem;
     background: url('../assets/blueBg.png') no-repeat center center;
     background-size: 100% 100%;
     -webkit-transition: all 0.3s ease-out 0s;
@@ -597,9 +616,45 @@ export default {
 	background: #d1d1d1;
 	opacity: 0.4;
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
 	.leftnav {
 		display: none !important;
+	}
+	.yd_top{
+		width: 100%;
+		height: 60px;
+	}
+	.yd_top .logo{
+		float: left;
+		margin-left: 3%;
+	}
+	.yd_top .logo img{
+		height: 25px;
+		display: inline-block;
+		line-height: 60px;
+		margin: auto 0;
+	}
+	.home .navBtn{
+		width: 0.6rem;
+		height: 0.5rem;
+		right: 5%;
+		margin-top: 5px;
+	}
+	.homeBox .navPage .ph_menu .nav_box{
+		padding-top: 50px;
+	}
+	.homeBox .navPage .ph_menu .nav_box .nli{
+		float: none;
+		width: 100%;
+		height: 60px;
+		padding: 0 5%;
+		margin-bottom: 20px;
+	}
+	.homeBox .navPage .ph_menu .nav_box .nli:hover span{
+		padding-top: 0;
+	}
+	.homeBox .navPage .ph_menu .nav_box .nli p span{
+		padding-top: 0;
 	}
 }
 </style>
