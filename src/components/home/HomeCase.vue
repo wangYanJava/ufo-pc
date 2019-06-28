@@ -349,7 +349,7 @@ export default {
                             // height: 3.07rem;
                             // width: 2.04rem;
                             height: 1.8rem;
-                            margin-top: 40px;
+                            margin-top: 0.4rem;
                             overflow: hidden;
                             position: relative;
                             img{
@@ -434,7 +434,7 @@ export default {
                         font-size: 0.15rem;
                         color: white;
                         vertical-align: middle;
-                        margin-top: -3px;
+                        margin-top: -0.03rem;
                         padding: 0;
                         margin: 0;
                         -webkit-transition: all 0.3s ease-out 0s;
@@ -445,13 +445,13 @@ export default {
                 }
                 a:hover{
                     cursor: pointer;
-                    width: 129px;
+                    width: 1.29rem;
                     -webkit-transition: all 0.3s ease-out 0s;
                     -moz-transition: all 0.3s ease-out 0s;
                     -o-transition: all 0.3s ease-out 0s;
                     transition: all 0.3s ease-out 0s;
                     span{
-                        width: 78px;
+                        width: 0.78rem;
 	                    text-align: center;
                         padding: 0;
                         margin: 0;
@@ -482,6 +482,9 @@ export default {
     .case .leftBox .contBox .tablebox .middlebox .slick_res1r .l1{
         margin-top: 0.45rem;
         width: 90%;
+    }
+    .case .leftBox .contBox .tablebox .middlebox .slick_res1r .l1 h4{
+        font-size: 0.23rem;
     }
     .case .leftBox .contBox .tablebox .middlebox .slick_res1r .l1 .ico{
         width: 0.35rem;

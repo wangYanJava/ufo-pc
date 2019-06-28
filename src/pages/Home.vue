@@ -133,6 +133,7 @@ export default {
 	},
 	created() {
 		this.getHeight()
+		this.scroll(0,0)
 	},
 	methods: {
 		getHeight() {
@@ -638,7 +639,11 @@ export default {
 		width: 0.6rem;
 		height: 0.5rem;
 		right: 5%;
-		margin-top: 5px;
+		margin-top: 0.15rem;
+		background: #dedede;
+	}
+	.home .navBtn img{
+		margin: 0.08rem 0.09rem;
 	}
 	.homeBox .navPage .ph_menu .nav_box{
 		padding-top: 50px;

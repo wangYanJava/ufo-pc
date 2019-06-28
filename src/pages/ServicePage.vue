@@ -41,7 +41,7 @@
       <div class="btn">
         <div class="cirBox">
           <!-- <a href="javascript:void(0)" @click="changeCurrent(index)" v-for="index in 4" :key="index" :class="{currActive:activeIndex==index}"> -->
-          <div @mouseenter="changeCurrent(item,index)" v-for="(item,index) in list1" :key="index" :class="{currActive2:activeIndex==index}"></div>
+          <div @mouseenter="changeCurrent(item,index)" @click="changeCurrent(item,index)" v-for="(item,index) in list1" :key="index" :class="{currActive2:activeIndex==index}"></div>
         <!-- </a> -->
         </div>
       </div>
@@ -80,8 +80,8 @@
           直选施工班组
         </div>
         <div class="detail">
-          蔚蓝公装是包工侠旗下孵化的公装品牌。我们拥有装修一级资质，每一个施工班组都是经过实际施工考验，并且在包工侠平台积累了足够<br />
-          好的江湖信用的。业主进行装修前可以充分考察施工班组的业绩及信用，直接选择满意的班组施工，不需要支付任何额外费用，拒绝中间商加价，用最低的价格做最好的装修。
+          蔚蓝公装是包工侠旗下孵化的公装品牌。我们拥有装修一级资质，每一个施工班组都是经过实际施工考验，<br />并且在包工侠平台积累了足够
+          好的江湖信用的。业主进行装修前可以充分考察施工班组的业绩及信用，<br />直接选择满意的班组施工，不需要支付任何额外费用，拒绝中间商加价，用最低的价格做最好的装修。
         </div>
       </div>
       <div class="sect sect3">
@@ -92,7 +92,7 @@
           AI智能监理
         </div>
         <div class="detail">
-          人工监理不能时刻在场，现场施工不放心，又没时间时刻关注进度，这些烦恼我们通通都懂，并且我们也为您找到了解决办法。我们现场安装智能AI摄像<br />
+          人工监理不能时刻在场，现场施工不放心，又没时间时刻关注进度，这些烦恼我们通通都懂，并且我们也为您<br />找到了解决办法。我们现场安装智能AI摄像
           头，时刻关注您的装修进度，按时发送进度报告给您。您在闲暇时还可以在自己手机上查看过往的施工图片和正在进行的施工视频，施工情况一手掌握，不用再为施工监管劳心费力。
         </div>
       </div>
@@ -104,7 +104,7 @@
           优质材料精心选，打破底价放心买
         </div>
         <div class="detail">
-          我们不敢保证每一样材料都是市场上价格最低的，但是我们可以确保我们采购的材料绝对是同等品质下最具性价比的。因为质量往往和价格挂钩，我们需要在确保材料安<br />
+          我们不敢保证每一样材料都是市场上价格最低的，但是<br />我们可以确保我们采购的材料绝对是同等品质下最具性价比的。因为质量往往和价格挂钩，我们需要在确保材料安
           全、环保的前提下为您选择用料，价格绝对透明公正，放心使用。
         </div>
       </div>
@@ -208,7 +208,7 @@ export default {
   data() {
     return {
       isShowNav: false,
-      activeIndex: 1,
+      activeIndex: 2,
       list1: [],
       imgList: [],
       currImgList:[],
@@ -219,6 +219,8 @@ export default {
     }
   },
   created() {
+    this.scrollTop() 
+
     this.list1 = [
       {
         p1:'AI智能设计，快速出图',
@@ -304,6 +306,10 @@ export default {
       this.listCount = Math.ceil(this.imgList.length / 4)
   },
   methods:{
+    scrollTop() {
+      window.scroll(0,0)
+    },
+
     lastPage(curr) {
       this.clickCount = curr - 1
       if(this.clickCount < 1) {
@@ -820,6 +826,7 @@ export default {
       .serItem:hover{
         .icon{
           background: url('../assets/32.png') no-repeat center;
+          background-size: contain;
           -webkit-transition: all 0.3s ease-out 0s;
           -moz-transition: all 0.3s ease-out 0s;
           -o-transition: all 0.3s ease-out 0s;
@@ -1021,6 +1028,14 @@ export default {
   }
 }
 @media screen and (max-width: 767px){
+  .service .navBtn{
+		width: 0.6rem;
+		height: 0.5rem;
+    background: #f7f7f7;
+	}
+  .service .navBtn img{
+		margin: 0.08rem 0.09rem;
+	}
   .service .navPage .ph_menu .nav_box{
 		padding-top: 50px;
 	}
@@ -1037,6 +1052,124 @@ export default {
 	.service .navPage .ph_menu .nav_box .nli p span{
 		padding-top: 0;
 	}
+  .service .title2{
+    margin: 0.15rem auto;
+  }
+  .service .title2 span{
+    font-size: 0.3rem;
+    line-height: 0.4rem;
+  }
+  .service .text{
+    width: 75%;
+  }
+  .service .title1 span{
+    width: 3.8rem;
+  }
+  .service .wrap1{
+    width: 85%;
+    height: auto;
+  }
+  .service .wrap1 .item{
+    width: 50%;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .service .wrap1 .item .blue{
+    height: 5rem !important;
+  }
+  .service .wrap1 .btn{
+    position: relative;
+  }
+  .service .wrap1 .item .blue .p1{
+    font-size: 0.24rem;
+  }
+  .service .wrap1 .item .blue .p2{
+    font-size: 0.16rem;
+  }
+  .service .wrap1 .item .blue .p3{
+    width: 88%;
+    font-size: 0.24rem;
+    line-height: 0.3rem;
+  }
+  .service .wrap1 .btn{
+    height: 0.8rem;
+  }
+  .service .wrap1 .btn .cirBox{
+    width: 3.5rem;
+    height: 0.25rem;
+  }
+  .service .wrap1 .btn .cirBox div{
+    width: 0.25rem;
+    height: 0.25rem;
+    margin: 0 0.25rem;
+  }
+  .service .mid{
+    height: 1.6rem;
+  }
+  .service .mid .t2{
+    font-size: 0.36rem;
+    line-height: 0.5rem;
+  }
+  .service .sectBox{
+    height: 18rem;
+  }
+  .service .sectBox .sect{
+    height: 4.5rem;
+  }
+  .service .sectBox .sect .ico{
+    /* margin: 0.25rem auto; */
+  }
+  .service .sectBox .sect .title{
+    font-size: 0.3rem;
+  }
+  .service .sectBox .sect .detail{
+    width: 85%;
+    margin-top: 0.25rem;
+    /* font-size: 0.2rem; */
+    font-size: 11px;
+    line-height: 18px;
+  }
+   .service .wrap2 .title{
+     height: 1.6rem;
+   }
+  .service .wrap2 .title .t2{
+    height: 0.26rem;
+    font-size: 0.36rem;
+    line-height: 0.5rem;
+  }
+  .service .wrap2 .content{
+    width: 85%;
+  }
+  .service .wrap2 .content .serItem{
+    width: 46%;
+    margin: 0.5rem 1.5%;
+    float: left;
+  }
+  .service .wrap2 .content{
+    height: 10.7rem;
+    display: block;
+  }
+  .service .wrap2 .content .prev{
+    top: 50%;
+  }
+  .service .wrap2 .content .next{
+    top: 50%;
+  }
+  .service .wrap2 .content .serItem .icon{
+    background-size: contain;
+  }
+  .service .office{
+    height: 4.2rem;
+  }
+  .service .office .contBox{
+    width: 80%;
+    margin-top: 0.9rem;
+  }
+  .service .office .contBox ul li img{
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 </style>
 

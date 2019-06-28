@@ -31,12 +31,15 @@
       <div class="smallTitle">
         Company &nbsp; Introduction
       </div>
-      <div class="aboutText text1">
+      <div class="aboutText text1 hidden-xs">
         蔚蓝公装是北京同创新业科技有限公司包工侠旗下孵化品牌，成立于2015年12月，致力于为各类发包方提供更优质的施工团队，<br />同时也为包工头积累相应的江湖信用，提供福利支持。未来公装目前拥有50名专业设计师，120多个施工团队，<br />国家一级装修资质，为广大客户提供空间设计，施工建造，智能AI监理，材料供应等一站式服务。
+      </div>
+      <div class="aboutText text1 visible-xs">
+        蔚蓝公装是北京同创新业科技有限公司包工侠旗下<br />孵化品牌，成立于2015年12月，<br />致力于为各类发包方提供更优质的施工团队，同时也为包工头积累相应的江湖信用，<br />提供福利支持。未来公装目前拥有50名专业设计师，120多个施工团队，国家一级装修资质，<br />为广大客户提供空间设计，施工建造，智能AI监理，材料供应等一站式服务。
       </div>
     </div>
     <!-- 服务优势 -->
-    <div class="service">
+    <div class="ser">
       <div class="bigTitle">
         服务优势
       </div>
@@ -140,7 +143,13 @@ export default {
 			isShowNav: false
 		}
   },
+  created() {
+    this.scrollTop()
+  },
   methods: {
+    scrollTop() {
+      window.scroll(0,0)
+    },
 		// 鼠标滑过按钮显示导航页
 		showNav(){
 			this.isShowNav = true
@@ -198,7 +207,7 @@ export default {
 			width: 100%;
 			position: absolute;
 			left: 0;
-			top: 45px;
+			top: 0.45rem;
 			z-index: 80;
 			-webkit-transition: all 0.3s ease-out 0s;
 			-moz-transition: all 0.3s ease-out 0s;
@@ -207,11 +216,11 @@ export default {
 			.top{
 				width: 100%;
 				float: left;
-				height: 26px;
-				padding: 0 60px;
+				height: 0.26rem;
+				padding: 0 0.6rem;
 				.logo {
 					float: left;
-					width: 204px;
+					width: 2.04rem;
 					margin-top: 0px;
 					img{
 						width: 100%;
@@ -265,7 +274,7 @@ export default {
     padding-bottom: 0.45rem;
     text-align: center;
   }
-  .service{
+  .ser{
     width: 100%;
     height: auto;
     padding-bottom: 0.45rem;
@@ -474,10 +483,8 @@ export default {
 }
 @media screen and (max-width: 767px){
   .about .navBtn{
-		width: 0.6rem;
-		height: 0.5rem;
-		/* right: 5%; */
-		/* margin-top: 5px; */
+		width: 0.6rem !important;
+		height: 0.5rem !important;
 	}
 	.about .navPage .ph_menu .nav_box{
 		padding-top: 50px;
@@ -495,6 +502,21 @@ export default {
 	.about .navPage .ph_menu .nav_box .nli p span{
 		padding-top: 0;
 	}
+  .chinTitle{
+    font-size: 18px;
+  }
+  .bigTitle{
+    font-size: 14px;
+  }
+  .aboutText{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .about .jion .content{
+    padding: 0 5%;
+  }
 }
 </style>
 

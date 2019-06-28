@@ -106,6 +106,8 @@ export default {
 		}
   },
   created() {
+    this.scrollTop()
+    
     this.$http.get('../../static/case.json').then(resp => {
       console.log(resp)
       this._officeList = resp.data.case[0]
@@ -125,6 +127,9 @@ export default {
     })
   },
 	methods: {
+    scrollTop() {
+      window.scroll(0,0)
+    },
     // 查看详情
     detail(item,index) {
       this.$router.push({
@@ -225,7 +230,7 @@ export default {
     // position: fixed;
     // left: 0;
     // top: 0;
-    height: 186px;
+    height: 1.86rem;
     background: #fff;
     z-index: 9;
     -webkit-transition: all 0.3s ease-out 0s;
@@ -235,12 +240,12 @@ export default {
     .top {
       width: 100%;
       float: left;
-      height: 26px;
-      padding: 0 60px;
+      height: 0.26rem;
+      padding: 0 0.6rem;
       .case-logo {
         float: left;
-        width: 204px;
-        margin-top: 20px;
+        width: 2.04rem;
+        margin-top: 0.2rem;
       }
       .navBtn{
         background: #dedede;
@@ -250,7 +255,7 @@ export default {
   .cateBtn{
     width: 100%;
     height: 1.02rem;
-    border-bottom: 2px solid #ececec;
+    border-bottom: 0.02rem solid #ececec;
     ul{
       // width: 8.7rem;
       height: 100%;
@@ -329,7 +334,7 @@ export default {
     display: block;
     .el-pagination {
       white-space: nowrap;
-      padding: 2px 5px;
+      padding: 0.02rem 0.05rem;
       color: #fff;
       font-weight: 700;
       height: 100%;
@@ -399,7 +404,7 @@ export default {
 			width: 100%;
 			text-align: left;
 			overflow: hidden;
-			border-top: solid 1px #353536;
+			border-top: solid 0.01rem #353536;
 			.nav_box {
 				width: 100%;
 				position: relative;
@@ -475,8 +480,9 @@ export default {
   .casePage .navBtn{
 		width: 0.6rem;
 		height: 0.5rem;
-		/* right: 5%; */
-		/* margin-top: 5px; */
+	}
+  .casePage .navBtn img{
+		margin: 0.08rem 0.09rem;
 	}
 	.casePage .navPage .ph_menu .nav_box{
 		padding-top: 50px;
@@ -494,6 +500,41 @@ export default {
 	.casePage .navPage .ph_menu .nav_box .nli p span{
 		padding-top: 0;
 	}
+  .casePage .cateBtn{
+    border: none;
+    height: 1.22rem;
+  }
+  .casePage .caseList{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .casePage .cateBtn ul{
+    overflow: auto;
+  }
+  .casePage .cateBtn ul li{
+    display: block;
+    float: left;
+    width: 32%;
+    font-size: 10px;
+    margin-bottom: 0.5rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    background: none;
+    border-right: 0.01rem solid #dedede;
+  }
+  .casePage .cateBtn ul li:nth-child(3){
+    border: none;
+  }
+  .casePage .cateBtn ul li:nth-last-child(1){
+    border: none;
+  }
+  .casePage .caseList ul li{
+    width: 47%;
+    height: 3.55rem !important;
+  }
+  .casePage .page{
+    margin-bottom: 0.8rem;
+  }
 }
 </style>
 

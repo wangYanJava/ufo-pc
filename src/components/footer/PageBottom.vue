@@ -1,9 +1,9 @@
 <template>
   <div class="pageBottom">
     <div class="contBox">
-      <div class="top">
-        <p class="companyName">北京同创新业有限公司</p>
-        <ul>
+      <div class="top hidden-xs">
+        <p class="companyName  hidden-xs">北京同创新业有限公司</p>
+        <ul class="hidden-xs">
             <li 
             v-for="(item,index) in list" 
             :key="index" 
@@ -16,7 +16,7 @@
       </div>
 
       <div class="mid">
-        <div class="left">
+        <div class="left hidden-xs">
           <ul>
             <li><span>智能设计</span></li>
             <li><span>高效省时</span></li>
@@ -51,10 +51,12 @@
         </div>
       </div>
 
-    <div class="PageFooter">
+    <div class="PageFooter hidden-xs">
       <div class="footer">
         <p>北京同创新业科技有限公司COPYRIGHT©2017包工侠baogongxia.com 备案号： 京ICP1备16032010号</p>
       </div>
+    </div>
+    <div class="yd_footer visible-xs">北京同创新业科技有限公司COPYRIGHT©2017包工侠baogongxia.com<br />备案号:&nbsp;&nbsp;京ICP1备16032010号
     </div>
     </div>
   </div>
@@ -231,4 +233,42 @@ export default {
   }
 }
 </style>
+<style scoped>
+@media screen and (max-width: 767px){
+  .pageBottom{
+    height: 3.5rem;
+  }
+  .pageBottom .contBox .mid .center{
+    padding-top: 0.3rem;
+    width: 70%;
+    padding-left: 5.5%;
+  }
+  .pageBottom .contBox .mid .right{
+    width: 25%;
+    float: right;
+    padding-top: 0;
+    margin-top: 0.3rem;
+  }
+  .pageBottom .contBox .mid .center ul li{
+    margin-bottom: 0.1rem;
+  }
+  .pageBottom .contBox .mid{
+    height: 2.5rem;
+    overflow: hidden;
+  }
+  .pageBottom .contBox .mid .right img{
+    margin-top: 0.05rem;
+  }
+  .pageBottom .contBox .yd_footer{
+    /* width: 89.06%; */
+    margin: 0 auto;
+    color: #adadad;
+    font-size: 0.16rem;
+    line-height: 0.32rem;
+    text-align: center !important;
+    padding: 0;
+  }
+}
+</style>
+
 

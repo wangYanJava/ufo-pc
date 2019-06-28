@@ -86,11 +86,15 @@ export default {
     }
 	},
 	created() {
+		this.scrollTop()
 		this.news = JSON.parse(sessionStorage.getItem('news'))
 		this.newsDetail = this.news.detail
 		console.log(this.news)
 	},
   methods: {
+		scrollTop() {
+      window.scroll(0,0)
+    },
 		back(){
 			this.$router.push({
 				path: '/news'
@@ -150,10 +154,7 @@ export default {
   height: 100%;
   .topnav{
     width: 100%;
-    // position: fixed;
-    // left: 0;
-    // top: 0;
-    height: 186px;
+    height: 1.86rem;
     background: #fff;
     z-index: 9;
     -webkit-transition: all 0.3s ease-out 0s;
@@ -163,12 +164,12 @@ export default {
     .top {
       width: 100%;
       float: left;
-      height: 26px;
-      padding: 0 60px;
+      height: 0.26rem;
+      padding: 0 0.6rem;
       .case-logo {
         float: left;
-        width: 204px;
-        margin-top: 20px;
+        width: 2.04rem;
+        margin-top: 0.2rem;
       }
 			.navBtn{
         background: #dedede;
@@ -378,6 +379,30 @@ export default {
 	}
 	.newsDetail .navPage .ph_menu .nav_box .nli p span{
 		padding-top: 0;
+	}
+	.newsDetail .newsTitle .prevBtn{
+		width: 1rem;
+		height: 0.4rem;
+		line-height: 0.4rem;
+		text-align: center;
+		font-size: 10px;
+	}
+	.newsDetail .newsTitle .title1{
+		font-size: 0.34rem;
+	}
+	.newsDetail .newsTitle .date{
+		font-size: 0.2rem;
+	}
+	.newsDetail .content{
+		width: 80%;
+	}
+	.newsDetail .content div .text p{
+		font-size: 0.26rem;
+		line-height: 0.4rem;
+		margin: 0.35rem 0;
+	}
+	.newsDetail .content .img img{
+		width: 80%;
 	}
 }
 </style>

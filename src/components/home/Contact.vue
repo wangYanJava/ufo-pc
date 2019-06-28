@@ -494,6 +494,11 @@ export default {
   .contact .contBox .middlebox .tab .homedown{
     width: 70%;
   }
+  .contact .contBox .middlebox .c_1570 .row_1 .hometop ul li .zbox .p{
+    font-size: 0.21rem;
+    line-height: 0.3rem;
+    margin-top: 0.35rem;
+  }
 }
 </style>
 

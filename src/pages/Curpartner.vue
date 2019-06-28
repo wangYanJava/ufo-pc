@@ -85,6 +85,8 @@ export default {
 		}
   },
   created() {
+    this.scrollTop()
+
     this.logoList = [
       [{
         url: require('../assets/logo1.jpg')
@@ -137,6 +139,9 @@ export default {
     ]
   },
 	methods: {
+    scrollTop() {
+      window.scroll(0,0)
+    },
 		// 鼠标滑过按钮显示导航页
 		showNav(){
 			this.isShowNav = true
@@ -193,7 +198,7 @@ export default {
     // position: fixed;
     // left: 0;
     // top: 0;
-    height: 186px;
+    height: 1.86rem;
     background: #fff;
     z-index: 9;
     -webkit-transition: all 0.3s ease-out 0s;
@@ -203,12 +208,12 @@ export default {
     .top {
       width: 100%;
       float: left;
-      height: 26px;
-      padding: 0 60px;
+      height: 0.26rem;
+      padding: 0 0.6rem;
       .case-logo {
         float: left;
-        width: 204px;
-        margin-top: 20px;
+        width: 2.04rem;
+        margin-top: 0.2rem;
       }
       .navBtn{
         background: #dedede;
@@ -345,7 +350,6 @@ export default {
         border-bottom: 1px solid #eeeeee;
         display: block;
         text-align: center;
-        vertical-align: middle;
         td{
           width: 24.8%;
           display: inline-block;
@@ -354,8 +358,8 @@ export default {
             display: inline-block;
             width: 100%;
             height: 1.3rem;
-            border-left: 1px solid #eeeeee;
-            border-right: 1px solid #eeeeee;
+            border-left: 0.01rem solid #eeeeee;
+            border-right: 0.01rem solid #eeeeee;
             margin-top: 0.7rem;
           }
         }
@@ -411,11 +415,12 @@ export default {
   max-height: 100% !important;
 }
 @media screen and (max-width: 767px){
+  .chinTitle{
+    font-size: 0.34rem;
+  }
   .partner .navBtn{
 		width: 0.6rem;
 		height: 0.5rem;
-		/* right: 5%; */
-		/* margin-top: 5px; */
 	}
 	.partner .navPage .ph_menu .nav_box{
 		padding-top: 50px;
@@ -433,6 +438,34 @@ export default {
 	.partner .navPage .ph_menu .nav_box .nli p span{
 		padding-top: 0;
 	}
+  .pageTitle{
+    height: 1.2rem;
+  }
+  .partner .partnerList{
+    margin-bottom: 0.5rem;
+  }
+  .partner .partnerList table tr{
+    border: none;
+    padding: 0 5%;
+  }
+  .partner .partnerList table tr td{
+    width: 50%;
+    display: block;
+    float: left;
+    border-bottom: 1px solid #eeeeee;
+  }
+  .partner .partnerList table tr:nth-last-child(1) td:nth-last-child(2){
+    border-bottom: none;
+  }
+  .partner .partnerList table tr:nth-last-child(1) td:nth-last-child(1){
+    border-bottom: none;
+  }
+  .partner .partnerList table tr td span{
+    border: none;
+  }
+  .partner .partnerList table tr td:nth-child(odd) span{
+    border-right: 1px solid #eeeeee;
+  }
 }
 </style>
 

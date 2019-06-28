@@ -1,5 +1,5 @@
 <template>
-  <div ref="box" class="service">
+  <div ref="box" class="homeService">
     <div class="contentBox">
       <div class="left">
         <div class="tablebox">
@@ -91,7 +91,7 @@ export default {
 </script>
 
 <style lang="scss">
-.service{
+.homeService{
   width: 100%;
   height: 9.24rem;
   background: url('../../assets/serviceBg.png') no-repeat center center;
@@ -327,64 +327,67 @@ export default {
 </style>
 <style>
 @media screen and (max-width: 1500px){
-.service .contentBox .right .tablebox .middlebox .slick_res2r li {
+.homeService .contentBox .right .tablebox .middlebox .slick_res2r li {
     padding: 0 30% 0 6% !important;
   }
 }
 @media screen and (max-width: 1360px){
-  .service .contentBox .left .tablebox .middlebox .slick_res2l .zbox {
+  .homeService .contentBox .left .tablebox .middlebox .slick_res2l .zbox {
     padding: 60px 5% 60px 4% !important;
     width: 100% !important;
     float: left !important;
   }
-  .service .contentBox .left .tablebox .middlebox .slick_res2l .zbox .img {
+  .homeService .contentBox .left .tablebox .middlebox .slick_res2l .zbox .img {
       width: 50% !important;
   }
-  .service .contentBox .left .tablebox .middlebox .slick_res2l .zbox .text{
+  .homeService .contentBox .left .tablebox .middlebox .slick_res2l .zbox .text{
     margin-left: 54% !important;
   }
- .service .contentBox .right .tablebox .middlebox .slick_res2r li .zbox {
+ .homeService .contentBox .right .tablebox .middlebox .slick_res2r li .zbox {
     height: 90px !important;
   }
-  .service .contentBox .right .tablebox .middlebox .slick_res2r li .zbox .ico {
+  .homeService .contentBox .right .tablebox .middlebox .slick_res2r li .zbox .ico {
       width: 44px !important;
       height: 44px !important;
       margin-top: -22px !important;
     }
-  .service .contentBox .right .tablebox .middlebox .slick_res2r li .zbox h4 {
+  .homeService .contentBox .right .tablebox .middlebox .slick_res2r li .zbox h4 {
       font-size: 0.16rem !important;
       line-height: 0.32rem;
   }
-  .service .contentBox .right .tablebox .middlebox .slick_res2r li .zbox h5 {
+  .homeService .contentBox .right .tablebox .middlebox .slick_res2r li .zbox h5 {
       line-height: 0.16rem !important;
   }
 }
 @media screen and (max-width:767px){
-  .service{
-    height: 375px !important;
+  .homeService{
+    height: 400px !important;
     margin-top: 10px;
   }
-  .service .contentBox{
+  .homeService .contentBox{
     width: 95%;
   }
-  .service .contentBox .left {
+  .homeService .contentBox .left {
     width: 81%;
     padding-top: 7%;
   }
-  .service .contentBox .right{
+  .homeService .contentBox .right{
     width: 18.85%;
   }
-  .service .contentBox .left .tablebox .middlebox{
+  .homeService .contentBox .left .tablebox .middlebox{
     display: block;
   }
-  .service .contentBox .left .tablebox .middlebox .slick_res2l{
+  .homeService .contentBox .left .tablebox .middlebox .slick_res2l{
     height: 62.2%;
   }
-  .service .contentBox .right .tablebox .middlebox .slick_res2r li {
+  .homeService .contentBox .right .tablebox .middlebox{
+    padding-top: 0;
+  }
+  .homeService .contentBox .right .tablebox .middlebox .slick_res2r li {
     padding: 0 !important;
     height: 47px;
   }
-  .service .contentBox .left .tablebox .middlebox .slick_res2l .zbox{
+  .homeService .contentBox .left .tablebox .middlebox .slick_res2l .zbox{
     padding: 0 !important;
     width: 100%;
     height: 100%;
@@ -392,26 +395,30 @@ export default {
     padding-right: 5% !important;
     padding-top: 5% !important;
   }
-  .service .contentBox .left .tablebox .middlebox .slick_res2l .zbox .img{
+  .homeService .contentBox .left .tablebox .middlebox .slick_res2l .zbox .img{
     width: 75% !important;
     float: none;
   }
-  .service .contentBox .left .tablebox .middlebox .slick_res2l .zbox .text{
+  .homeService .contentBox .left .tablebox .middlebox .slick_res2l .zbox .text{
     margin-left: 0 !important;
     margin-top: 20px !important;
   }
-  .service .contentBox .right .tablebox .middlebox .slick_res2r li .zbox h4 {
+  .homeService .contentBox .left .tablebox .middlebox .slick_res2l .zbox .text h4{
+    font-size: 0.24rem;
+  }
+  .homeService .contentBox .right .tablebox .middlebox .slick_res2r li .zbox h4 {
     padding-left: 10%;
     padding-top: 10%;
+    font-size: 0.18rem !important;
   }
-  .service .contentBox .right .tablebox .middlebox .slick_res2r li .zbox {
+  .homeService .contentBox .right .tablebox .middlebox .slick_res2r li .zbox {
     height: 47px !important;
   }
-  .service .contentBox .left .tablebox .middlebox .slick_res2l .zbox .text .p{
-    font-size: 0.18rem;
+  .homeService .contentBox .left .tablebox .middlebox .slick_res2l .zbox .text .p{
+    font-size: 0.22rem;
     height: 1rem;
   }
-  .service .contentBox .left .tablebox .middlebox .slick_res2l .zbox .text .detail a{
+  .homeService .contentBox .left .tablebox .middlebox .slick_res2l .zbox .text .detail a{
     width: 0.55rem;
     height: 0.55rem;
     line-height: 0.6rem;

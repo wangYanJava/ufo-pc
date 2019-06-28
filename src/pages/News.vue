@@ -61,8 +61,10 @@
         </li>
       </ul>
     </div>
+
+
     <!-- 分页器 -->
-    <div class="page">
+    <!-- <div class="page">
       <el-pagination
         background
         layout="prev, pager, next"
@@ -70,7 +72,9 @@
         :page-size="4"
         :total="total">
       </el-pagination>
-    </div>
+    </div> -->
+
+
     <!-- 网页脚部 -->
     <page-bottom></page-bottom>
     <!-- 默认隐藏的导航页 -->
@@ -131,6 +135,8 @@ export default {
 		}
   },
   created() {
+    this.scrollTop()
+    
     this.allList = [
       {
         imgUrl: 'https://baogongxia1.oss-cn-shenzhen.aliyuncs.com/%E6%A1%88%E4%BE%8B/img/1.jpg',
@@ -321,8 +327,12 @@ export default {
     // 第一次进入是当前页数据列表
       this.currList = this.newsList.slice(0, 4)
       this.total = this.newsList.length
+      console.log(this.currList)
   },
   methods: {
+    scrollTop() {
+      window.scroll(0,0)
+    },
     // 查看详情
     toDetail(item,index) {
       this.$router.push({
@@ -508,7 +518,8 @@ export default {
           float: left;
           img{
             width: 4.6rem;
-            height: 1.75rem;
+            // height: 1.75rem;
+            height: 2.3rem;
           }
         }
         .rightTitle{
@@ -529,6 +540,7 @@ export default {
           .p2{
             font-size: 0.18rem;
             width: 64.27%;
+            height: 17%;
             display: -webkit-box;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 1;
@@ -702,7 +714,8 @@ export default {
     float: right !important;
   }
   .news .newsList ul li .leftPic img{
-    height: auto;
+    /* height: auto; */
+    /* height: 2.3rem; */
   }
   .news .newsList ul li .rightTitle .p3[data-v-6aa13012] {
     line-height: 0.2rem !important;
@@ -713,8 +726,6 @@ export default {
   .news .navBtn{
 		width: 0.6rem;
 		height: 0.5rem;
-		/* right: 5%; */
-		/* margin-top: 5px; */
 	}
 	.news .navPage .ph_menu .nav_box{
 		padding-top: 50px;
@@ -732,5 +743,54 @@ export default {
 	.news .navPage .ph_menu .nav_box .nli p span{
 		padding-top: 0;
 	}
+  .news .topBanner{
+    margin-bottom: 0.7rem;
+  }
+  .news .chinTitle{
+    font-size: 18px;
+  }
+  .news .pageTitle{
+    height: 1rem;
+  }
+  .news .cateBtn ul li{
+    font-size: 15px;
+  }
+  .news .newsList{
+    margin-top: 1.2rem;
+  }
+  .news .newsList ul li{
+    height: 5.3rem !important;
+    margin-bottom: 0.8rem;
+  }
+  .news .newsList ul li:nth-last-child(1){
+    border-bottom: 2px solid #eee;
+  }
+  .news .newsList ul li .leftPic{
+    float: none !important;
+    width: 100% !important;
+    height: auto;
+  }
+  .news .newsList ul li .leftPic img{
+    height: 2.3rem;
+  }
+  .news .newsList ul li .rightTitle{
+    float: none !important;
+    width: 100% !important;
+    margin-top: 0.5rem;
+  }
+  .news .newsList ul li .rightTitle .p1{
+    width: 100%;
+    font-size: 14px;
+  }
+  .news .newsList ul li .rightTitle .p2{
+    width: 96%;
+    font-size: 10px;
+    -webkit-line-clamp: 2;
+  }
+  .news .newsList ul li .moreBtn{
+    top: auto;
+    bottom: 0 !important;
+    color: #299df4;
+  }
 }
 </style>

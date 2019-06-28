@@ -85,10 +85,14 @@ export default {
     }
 	},
 	created() {
+		this.scrollTop()
 		this.case = JSON.parse(sessionStorage.getItem('case'))
 		console.log(this.case)
 	},
   methods: {
+		scrollTop() {
+      window.scroll(0,0)
+    },
 		back(){
 			this.$router.push({
 				path: '/case'
@@ -148,10 +152,7 @@ export default {
   height: 100%;
   .topnav{
     width: 100%;
-    // position: fixed;
-    // left: 0;
-    // top: 0;
-    height: 186px;
+    height: 1.86rem;
     background: #fff;
     z-index: 9;
     -webkit-transition: all 0.3s ease-out 0s;
@@ -161,12 +162,12 @@ export default {
     .top {
       width: 100%;
       float: left;
-      height: 26px;
-      padding: 0 60px;
+      height: 0.26rem;
+      padding: 0 0.6rem;
       .case-logo {
         float: left;
-        width: 204px;
-        margin-top: 20px;
+        width: 2.04rem;
+        margin-top: 0.2rem;
       }
       .navBtn{
         background: #dedede;
@@ -390,6 +391,41 @@ export default {
 	}
 	.caseDetail .navPage .ph_menu .nav_box .nli p span{
 		padding-top: 0;
+	}
+	.caseDetail .caseContent{
+		margin-top: 0.7rem;
+	}
+	.caseDetail .caseContent .prevBtn{
+		width: 1rem;
+		height: 0.4rem;
+		line-height: 0.4rem;
+		text-align: center;
+		font-size: 10px;
+		top: -0.42rem;
+		right: 7.5%;
+	}
+	.caseDetail .caseContent .left{
+		display: block;
+		width: 100%;
+		background: #fff;
+	}
+	.caseDetail .caseContent .right{
+		display: block;
+		width: 85%;
+		height: 2rem;
+		margin: 0 auto;
+	}
+	.caseDetail .caseContent .left .text{
+		font-size: 0.22rem;
+	}
+	.caseDetail .caseContent .right .t1{
+		margin-top: 0.7rem;
+		font-size: 0.3rem;
+		padding-left: 1.3rem;
+	}
+	.caseDetail .caseContent .right .t2{
+		padding-left: 21%;
+		font-size: 0.26rem;
 	}
 }
 </style>
