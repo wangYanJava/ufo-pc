@@ -7,10 +7,10 @@
         </div>
     </div>
     <!-- logo -->
-    <div class="pz_top hidden-xs">
+    <div class="pz_top">
       <div class="top">
           <div class="logo">
-            <img src="../assets/logo.png">
+            <img src="../assets/logoBlack.png">
           </div>
       </div>
     </div>
@@ -405,7 +405,7 @@ export default {
 			width: 100%;
 			position: absolute;
 			left: 0;
-			top: 45px;
+			top: 0.45rem;
 			z-index: 80;
 			-webkit-transition: all 0.3s ease-out 0s;
 			-moz-transition: all 0.3s ease-out 0s;
@@ -414,11 +414,11 @@ export default {
 			.top{
 				width: 100%;
 				float: left;
-				height: 26px;
-				padding: 0 60px;
+				height: 0.26rem;
+				padding: 0 0.6rem;
 				.logo {
 					float: left;
-					width: 204px;
+					width: 2.04rem;
 					margin-top: 0px;
 					img{
 						width: 100%;
@@ -429,11 +429,32 @@ export default {
 		}
   .btnBox{
     width: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 1.86rem;
+    // position: fixed;
+    // left: 0;
+    // top: 0;
+    height: 1.1rem;
     z-index: 99;
+    .navBtn{
+      // position: fixed;
+      cursor: pointer;
+      right: 0.5rem;
+      top: 0.5rem;
+      width: 0.4rem;
+      height: 0.32rem;
+      text-align: center;
+      display: block;
+      z-index: 82;
+      margin-top: 20px;
+      background: #fff;
+      -webkit-transition: all 0.3s ease-out 0s;
+      -moz-transition: all 0.3s ease-out 0s;
+      -o-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s;
+      img{
+        margin: 0.08rem 0.1rem;
+        float: left;
+      }
+    }
   }
   .topBanner{
     width: 100%;
@@ -670,7 +691,8 @@ export default {
     }
   }
   .sectBox{
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     height: 14.32rem;
     background: url('../assets/bg1-1.png') no-repeat center center;
     background-size: 100% 100%;
@@ -836,7 +858,8 @@ export default {
     }
   }
   .office{
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     height: 7.27rem;
     overflow: hidden;
     background: url('../assets/b-bg.png') no-repeat center center;
@@ -986,6 +1009,9 @@ export default {
 }
 </style>
 <style scoped>
+.service .navBtn{
+  background: #dedede;
+}
 @media screen and (max-width: 1360px){
   .service .wrap1 .item .blue{
     height: 2.95rem !important;
@@ -1032,6 +1058,7 @@ export default {
 		width: 0.6rem;
 		height: 0.5rem;
     background: #f7f7f7;
+    top: 0 !important;
 	}
   .service .navBtn img{
 		margin: 0.08rem 0.09rem;
@@ -1112,6 +1139,7 @@ export default {
     line-height: 0.5rem;
   }
   .service .sectBox{
+    width: 94%;
     height: 18rem;
   }
   .service .sectBox .sect{
@@ -1169,6 +1197,18 @@ export default {
   .service .office .contBox ul li img{
     width: 80%;
     margin: 0 auto;
+  }
+  .service .mid .t1 span::before{
+    background: none;
+  }
+  .service .mid .t1 span::after{
+    background: none;
+  }
+  .service .wrap2 .title .t1 span::before{
+    background: none;
+  }
+  .service .wrap2 .title .t1 span::after{
+    background: none;
   }
 }
 </style>

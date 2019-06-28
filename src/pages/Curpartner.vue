@@ -9,10 +9,14 @@
           </div>
         </div>
     </div>
+    <!-- banner -->
+    <div class="caseBanner">
+      <img src="../assets/hezuoBanner.jpg" alt="">
+    </div>
     <!-- 标题 -->
     <div class="pageTitle">
-      <p class="chinTitle">合作伙伴</p>
-      <p class="engTitle">Curpartner</p>
+      <p class="chinTitle">客户</p>
+      <p class="engTitle">Customer</p>
     </div>
     <!-- 合作列表 -->
     <div class="partnerList">
@@ -195,10 +199,7 @@ export default {
   width: 100%;
   .topnav{
     width: 100%;
-    // position: fixed;
-    // left: 0;
-    // top: 0;
-    height: 1.86rem;
+    height: 1.56rem;
     background: #fff;
     z-index: 9;
     -webkit-transition: all 0.3s ease-out 0s;
@@ -218,6 +219,13 @@ export default {
       .navBtn{
         background: #dedede;
       }
+    }
+  }
+  .caseBanner{
+    width: 100%;
+    margin-bottom: 0.8rem;
+    img{
+      width: 100%;
     }
   }
   .navPage{

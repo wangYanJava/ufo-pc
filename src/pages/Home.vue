@@ -623,7 +623,7 @@ export default {
 	}
 	.yd_top{
 		width: 100%;
-		height: 60px;
+		height: 70px;
 	}
 	.yd_top .logo{
 		float: left;

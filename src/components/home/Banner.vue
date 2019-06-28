@@ -1,5 +1,5 @@
 <template>
-  <div class="banner hidden-xs">
+  <div class="banner">
     <el-carousel :height="imgHeight+'px'">
       <el-carousel-item v-for="(item,index) in imgs" :key="index">
         <img class="img-responsive" ref="imgHeight" @load="imgLoad" :src="item.url" alt="">

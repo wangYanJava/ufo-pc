@@ -28,8 +28,8 @@
                 <li class="l1" v-for="(item,index) in currentList.data" :key="index">
                         <div class="tablebox">
                             <div class="middlebox">
-                                <h5>{{item.address}}</h5>
                                 <h3 class="elli">{{item.name}}</h3>
+                                <h5>{{item.address}}</h5>
                                 <div class="img">
                                     <img :src="item.keyImg" alt="" title="">
                                 </div>

@@ -182,7 +182,7 @@ export default {
   background-size: 100% auto;
   .contentWrap{
     width: 74.47%;
-    height: 100%;
+    height: 95%;
     margin: 0 auto;
     position: relative;
     display: table;

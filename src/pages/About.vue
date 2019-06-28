@@ -1,22 +1,25 @@
 <template>
   <!-- 顶部图片 -->
   <div class="about">
+    <div class="btnBox">
+      <!-- 导航切换按钮 -->
+      <div class="navBtn" @click="showNav">
+          <img src="../assets/navBtn.png" alt="">
+        </div>
+    </div>
     <!-- logo -->
-    <div class="pz_top hidden-xs">
+    <div class="pz_top">
       <div class="top">
           <div class="logo">
-            <img src="../assets/logo.png">
+            <img src="../assets/logoBlack.png">
           </div>
       </div>
     </div>
+
     <div class="bannerBox">
       <img src="../assets/aboutBg.png" alt="">
     </div>
     <div class="btnBox">
-      <!-- 导航切换按钮 -->
-      <div class="navBtn" @click="showNav">
-        <img src="../assets/navBtn.png" alt="">
-      </div>
     </div>
     <!-- 标题 -->
     <div class="pageTitle">
@@ -57,24 +60,6 @@
         从此装修无忧<br />
       </div>
     </div>
-
-
-    <!-- 团队 -->
-    <!-- <div class="teamTitle">
-      设计团队
-    </div>
-    <div class="team">
-      <div class="item" v-for="item in 3" :key="item">
-        <div class="left">
-          <img src="../assets/casePic.png" alt="">
-        </div>
-        <div class="right">
-          <p>叶萍</p>
-          <p>YELEONG</p>
-          <p>设计理念：源于生活&nbsp;定制创新&nbsp;细节体验</p>
-        </div>
-      </div>
-    </div> -->
 
   <!-- 加入我们 -->
   <div class="jion">
@@ -231,13 +216,13 @@ export default {
 		}
   .btnBox{
     width: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 1.86rem;
+    // position: fixed;
+    // left: 0;
+    // top: 0;
+    height: 1.1rem;
     z-index: 99;
     .navBtn{
-      position: fixed;
+      // position: fixed;
       cursor: pointer;
       right: 0.5rem;
       top: 0.5rem;
@@ -486,6 +471,9 @@ export default {
 		width: 0.6rem !important;
 		height: 0.5rem !important;
 	}
+  .about .btnBox .navBtn{
+    top: 0 !important;
+  }
 	.about .navPage .ph_menu .nav_box{
 		padding-top: 50px;
 	}

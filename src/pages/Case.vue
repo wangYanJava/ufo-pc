@@ -9,6 +9,10 @@
         </div>
       </div>
   </div>
+  <!-- banner -->
+  <div class="caseBanner">
+      <img src="../assets/caseBanner.jpg" alt="">
+    </div>
   <!-- 标题 -->
   <div class="pageTitle">
     <p class="chinTitle">案例</p>
@@ -230,7 +234,7 @@ export default {
     // position: fixed;
     // left: 0;
     // top: 0;
-    height: 1.86rem;
+    height: 1.56rem;
     background: #fff;
     z-index: 9;
     -webkit-transition: all 0.3s ease-out 0s;
@@ -250,6 +254,13 @@ export default {
       .navBtn{
         background: #dedede;
       }
+    }
+  }
+  .caseBanner{
+    width: 100%;
+    margin-bottom: 0.8rem;
+    img{
+      width: 100%;
     }
   }
   .cateBtn{
@@ -312,6 +323,8 @@ export default {
         h4{
           font-family: "HELVETICANEUELTPRO-THEX", "微软雅黑";
           font-size: 0.16rem;
+          height: 0.2rem;
+          line-height: 0.2rem;
           color: #565656;
           margin-top: 0.3rem;
           width: 100%;

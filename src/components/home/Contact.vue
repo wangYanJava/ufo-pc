@@ -147,8 +147,8 @@
           </div>
         </div>
         <!-- 切换箭头 -->
-        <div class="prev hidden-xs" @click="toPrev"></div>
-        <div class="next hidden-xs" @click="toNext"></div>
+        <!-- <div class="prev hidden-xs" @click="toPrev"></div>
+        <div class="next hidden-xs" @click="toNext"></div> -->
       </div>
     </div>
     <!-- 网页脚部 -->

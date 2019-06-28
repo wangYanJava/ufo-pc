@@ -1,10 +1,10 @@
 <template>
   <div class="news">
     <!-- logo -->
-    <div class="pz_top hidden-xs">
+    <div class="pz_top">
       <div class="top">
           <div class="logo">
-            <img src="../assets/logo.png">
+            <img src="../assets/logoBlack.png">
           </div>
       </div>
     </div>
@@ -37,7 +37,7 @@
     <!-- 新闻列表 -->
     <div class="newsList">
       <ul>
-        <li v-for="(item,index) in currList" :key="index">
+        <li v-for="(item,index) in currList" :key="index" @click="toDetail(item,index)">
           <div class="leftPic">
             <img :src="item.imgUrl" alt="">
           </div>
@@ -429,7 +429,7 @@ export default {
 			width: 100%;
 			position: absolute;
 			left: 0;
-			top: 45px;
+			top: 0.45rem;
 			z-index: 80;
 			-webkit-transition: all 0.3s ease-out 0s;
 			-moz-transition: all 0.3s ease-out 0s;
@@ -438,11 +438,11 @@ export default {
 			.top{
 				width: 100%;
 				float: left;
-				height: 26px;
-				padding: 0 60px;
+				height: 0.26rem;
+				padding: 0 0.6rem;
 				.logo {
 					float: left;
-					width: 204px;
+					width: 2.04rem;
 					margin-top: 0px;
 					img{
 						width: 100%;
@@ -453,10 +453,10 @@ export default {
 		}
   .btnBox{
     width: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 1.86rem;
+    // position: fixed;
+    // left: 0;
+    // top: 0;
+    height: 1.1rem;
     z-index: 99;
   }
   .topBanner{
@@ -512,6 +512,7 @@ export default {
         border-bottom: 2px solid #eee;
         margin-bottom: 0.4rem;
         position: relative;
+        cursor: pointer;
         .leftPic{
           width: 29.87%;
           height: 100%;
@@ -519,7 +520,8 @@ export default {
           img{
             width: 4.6rem;
             // height: 1.75rem;
-            height: 2.3rem;
+            // height: 2.3rem;
+            height: 84%;
           }
         }
         .rightTitle{
@@ -726,6 +728,7 @@ export default {
   .news .navBtn{
 		width: 0.6rem;
 		height: 0.5rem;
+    top: 0 !important;
 	}
 	.news .navPage .ph_menu .nav_box{
 		padding-top: 50px;
