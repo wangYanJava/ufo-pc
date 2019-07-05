@@ -298,7 +298,7 @@ export default {
     height: auto;
     box-sizing: border-box;
     padding: 0 0.26rem;
-    margin-top: 1.68rem;
+    margin-top: 1.08rem;
     ul{
       width: 100%;
       height: auto;
@@ -342,8 +342,8 @@ export default {
   }
   .page{
     width: 100%;
-    height: 1.14rem;
-    margin-bottom: 1.5rem;
+    height: 0.8rem;
+    margin-bottom: 1rem;
     display: block;
     .el-pagination {
       white-space: nowrap;
@@ -480,13 +480,16 @@ export default {
 }
 </style>
 <style scoped>
+.pageTitle{
+  height: 1.1rem;
+}
 .el-pagination.is-background .el-pager li:not(.disabled).active {
     background-color: #3f3f3f;
     color: #FFF;
 }
 @media screen and (max-width: 1360px){
   .casePage .caseList ul li{
-    height: 4.35rem !important;
+    height: 3.75rem !important;
   }
 }
 @media screen and (max-width: 767px){
@@ -495,7 +498,7 @@ export default {
 		height: 0.5rem;
 	}
   .casePage .navBtn img{
-		margin: 0.08rem 0.09rem;
+		margin: 0.09rem 0.09rem;
 	}
 	.casePage .navPage .ph_menu .nav_box{
 		padding-top: 50px;

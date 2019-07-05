@@ -40,7 +40,7 @@
                                             alt="PHONE" title="PHONE"></div>
                                     <h4>PHONE</h4>
                                     <div class="p">
-                                        <p>028-85521744</p>
+                                        <p>18615777604</p>
                                     </div>
                                 </span>
                             </div>

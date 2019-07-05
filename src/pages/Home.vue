@@ -215,12 +215,13 @@ export default {
 				float: left;
 				height: 26px;
 				padding: 0 60px;
+				padding-left: 80px;
 				.logo {
 					float: left;
 					width: 204px;
 					margin-top: 0px;
 					img{
-						width: 100%;
+						width: 90%;
     				float: left;
 					}
 				}
@@ -643,7 +644,7 @@ export default {
 		background: #dedede;
 	}
 	.home .navBtn img{
-		margin: 0.08rem 0.09rem;
+		margin: 0.1rem 0.1rem;
 	}
 	.homeBox .navPage .ph_menu .nav_box{
 		padding-top: 50px;

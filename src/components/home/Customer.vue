@@ -182,7 +182,7 @@ export default {
   background-size: 100% auto;
   .contentWrap{
     width: 74.47%;
-    height: 95%;
+    height: 100%;
     margin: 0 auto;
     position: relative;
     display: table;
@@ -419,15 +419,33 @@ export default {
 }
 </style>
 <style>
+@media screen and (max-width: 1560px){
+  .customer .contentWrap .middlebox .dl .dd.d1 .number .number_t .l2 h3 b {
+    font-size: 0.8rem;
+  }
+  .customer .contentWrap .middlebox .dl .dd.d1 .number .number_b .l2 h3 b {
+    font-size: 0.5rem;
+  }
+}
 @media screen and (max-width: 1360px){
+  .customer .contentWrap .middlebox .dl .dd .l1 a{
+      height: 1.4rem;
+  }
   .customer .contentWrap .middlebox .dl .dd.d1 .number{
     width: 100%;
     float: left;
-    height: 3.44rem;
+    height: 2.86rem;
     text-align: center;
     padding: 0 !important;
   }
-}
+  .customer .contentWrap .middlebox .dl .dd.d1 .number .number_t .l2 h3{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .customer .contentWrap .middlebox .dl .dd.d1 .number .number_b .l2 h3{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 .customer .contentWrap .middlebox .dl .dd.d1 .number .number_t .l2 h3{
     width: 100%;
     float: left;
@@ -485,9 +503,25 @@ export default {
     line-height: 0.24rem;
     opacity: 0.8;
 }
+}
+@media screen and (max-width: 1200px){
+  .customer .contentWrap .middlebox .dl .dd .l1 a{
+    height: 1.25rem;
+  }
+  .customer .contentWrap .middlebox .dl .dd.d1 .number {
+    height: 2.56rem;
+  }
+  .customer .contentWrap .middlebox .dl .dd.d1 .number .number_t .l2 h3{
+    line-height: 0.7rem;
+  }
+  .customer .contentWrap .middlebox .dl .dd.d1 .number .number_b{
+    margin-top: 0.1rem;
+    padding-top: 0.1rem;
+  }
+}
 @media screen and (max-width: 767px){
   .customer{
-    height: 495px !important;
+    height: 415px !important;
     padding-top: 10%;
   }
   .customer .contentWrap{

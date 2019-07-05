@@ -662,7 +662,7 @@ export default {
       }
       span::before{
         content: '';
-        width: 39%;
+        width: 36%;
         height: 100%;
         background: url('../assets/33.png') no-repeat right center;
         background-size: 90% 0.02rem;
@@ -672,7 +672,7 @@ export default {
       }
       span::after{
         content: '';
-        width: 39%;
+        width: 36%;
         height: 100%;
         background: url('../assets/34.png') no-repeat left center;
         background-size: 90% 0.02rem;
@@ -756,7 +756,7 @@ export default {
         }
         span::before{
           content: '';
-          width: 39%;
+          width: 36%;
           height: 100%;
           background: url('../assets/33.png') no-repeat right center;
           background-size: 90% 0.02rem;
@@ -766,7 +766,7 @@ export default {
         }
         span::after{
           content: '';
-          width: 39%;
+          width: 36%;
           height: 100%;
           background: url('../assets/34.png') no-repeat left center;
           background-size: 90% 0.02rem;
@@ -1012,6 +1012,14 @@ export default {
 .service .navBtn{
   background: #dedede;
 }
+@media screen and (max-width: 1500px){
+  .service .wrap2 .title .t1 span::before{
+    width: 35%;
+  }
+  .service .wrap2 .title .t1 span::after{
+    width: 35%;
+  }
+}
 @media screen and (max-width: 1360px){
   .service .wrap1 .item .blue{
     height: 2.95rem !important;
@@ -1052,8 +1060,27 @@ export default {
   .service .wrap1 .item .blue{
     height: 3.2rem !important;
   }
+  .service .mid .t1 span::before{
+    width: 36%;
+  }
+  .service .mid .t1 span::after{
+    width: 36%;
+  }
+}
+@media screen and (max-width: 1200px){
+  .service .wrap1 .item .blue{
+    height: 3.5rem !important;
+  }
+  .service .wrap1 .btn{
+    height: 1.2rem;
+  }
 }
 @media screen and (max-width: 767px){
+  .service .btnBox .navBtn{
+    width: 0.6rem;
+    height: 0.5rem;
+    background: #f7f7f7;
+  }
   .service .navBtn{
 		width: 0.6rem;
 		height: 0.5rem;

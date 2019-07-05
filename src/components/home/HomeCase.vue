@@ -347,8 +347,9 @@ export default {
                         .img{
                             width: 100%;
                             // height: 3.07rem;
+                            // height: 120%;
                             // width: 2.04rem;
-                            height: 1.8rem;
+                            height: 2rem;
                             margin-top: 0.4rem;
                             overflow: hidden;
                             position: relative;
@@ -469,6 +470,9 @@ export default {
 }
 </style>
 <style>
+.case .rightShowCase ul li:nth-child(1){
+    border-left: none;
+}
 @media screen and (max-width:767px){
     .case{
         width: 100%;

@@ -23,7 +23,7 @@
             <li><span>直选班组</span></li>
             <li><span>无中间价</span></li>
             <li><span>先装后付</span></li>
-            <li><span>征信白条</span></li>
+            <li><span>透明装修</span></li>
           </ul>
         </div>
         <div class="center">
@@ -229,6 +229,7 @@ export default {
       color: #adadad;
       font-size: 0.16rem;
       line-height: 0.73rem;
+      background: #fff;
     }
   }
 }

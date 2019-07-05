@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style>
-*{
+*{ 
   margin: 0;
   padding: 0;
   list-style: none;
@@ -54,8 +54,9 @@ html { font-size:100px; }
 @media(max-width:320px){ html { font-size:50px; } }		/*i5宽度*/
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  /* font-family: 'Avenir', Helvetica, Arial, sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: '微软雅黑';
 }
 </style>
