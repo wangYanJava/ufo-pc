@@ -1130,7 +1130,7 @@ export default {
     vertical-align: top;
   }
   .service .wrap1 .item .blue{
-    height: 5rem !important;
+    height: 5.3rem !important;
   }
   .service .wrap1 .btn{
     position: relative;

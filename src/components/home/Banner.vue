@@ -23,7 +23,7 @@ export default {
         url: require('../../assets/banner1.png')
       },
       {
-        url: require('../../assets/banner2.png')
+        url: require('../../assets/banner2.jpg')
       },
       {
         url: require('../../assets/banner3.png')
